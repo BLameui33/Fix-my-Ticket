@@ -45,7 +45,7 @@
   
   <div style="text-align: center; margin: 15px 0 30px 0;">
     <a href="#lkwForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #d32f2f; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      ⬇ Direkt zum kostenlosen Einspruchs-Generator ⬇
+      Direkt zum kostenlosen Einspruchs-Generator
     </a>
   </div>
   
@@ -207,12 +207,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte & Kontroll-Hotspots:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-lkw-bussgeld-bretten.html">LKW-Kontrolle Bretten</a>
-<a href="einspruch-lkw-bussgeld-bochum.html">LKW-Kontrolle Bochum</a>
-<a href="einspruch-lkw-bussgeld-greven.html">LKW-Kontrolle Greven</a>
-<a href="einspruch-lkw-bussgeld-lauf-pegnitz.html">LKW-Kontrolle Lauf a.d.Pegnitz</a>
-<a href="einspruch-lkw-bussgeld-koethen.html">LKW-Kontrolle Köthen (Anhalt)</a>
-<a href="einspruch-lkw-bussgeld-landau.html">LKW-Kontrolle Landau in der Pfalz</a>
+      <a href="einspruch-lkw-bussgeld-brunsbuettel.html">LKW-Kontrolle Brunsbüttel</a>
+<a href="einspruch-lkw-bussgeld-erkelenz.html">LKW-Kontrolle Erkelenz</a>
+<a href="einspruch-lkw-bussgeld-usedom.html">LKW-Kontrolle Usedom (Stadt)</a>
+<a href="einspruch-lkw-bussgeld-lemgo.html">LKW-Kontrolle Lemgo</a>
+<a href="einspruch-lkw-bussgeld-castrop-rauxel.html">LKW-Kontrolle Castrop-Rauxel</a>
+<a href="einspruch-lkw-bussgeld-gronau.html">LKW-Kontrolle Gronau (Westf.)</a>
 
     </div>
   </div>
@@ -358,7 +358,7 @@ text += `gegen den oben bezeichneten Bescheid wegen des Vorwurfs (${vorwurfText}
     text += `Den erhobenen Vorwurf weise ich in Gänze zurück. Die Beweisführung der Behörde ist offenkundig lückenhaft und materiell-rechtlich angreifbar. Die Auswertung der elektronischen Fahrtenschreiberdaten bzw. die angewandte Messmethodik weist erhebliche Interpretations- und Systemfehler auf. Zur Wahrung meiner Rechte fordere ich Sie hiermit auf, mir sämtliche Rohmessdaten, das Eichprotokoll, etwaige Aufbauskizzen sowie die Schulungsnachweise der Messbeamten zur gutachterlichen Überprüfung zur Verfügung zu stellen.`;
   }
 
-  text += `\n\nIch erwarte den Eingang Ihrer schriftlichen Eingangsbestätigung sowie der Entscheidung über die Akteneinsicht.\n\nMit freundlichen Grüßen`;
+  text += `\n\nIch erwarte den Eingang Ihrer schriftlichen Eingangsbestätigung sowie der Entscheidung über die Akteneinsicht.`;
   return text;
 }
 
@@ -384,7 +384,8 @@ const sonstigerVerstoss = document.getElementById('pSonstigerVerstoss').value;
     return;
   }
 
-  const fullText = getLkwText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, vorwurf, tachoDoku, freitext, sonstigerVerstoss) + `\n\n${sName}`;
+  const fullText = getLkwText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, vorwurf, tachoDoku, freitext, sonstigerVerstoss) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
+  
   
   navigator.clipboard.writeText(fullText).then(() => {
     let msg = "Text kopiert! Sie können ihn jetzt im Online-Portal einfügen.\\n\\n";

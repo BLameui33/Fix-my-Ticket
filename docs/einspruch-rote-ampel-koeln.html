@@ -191,12 +191,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte & Regionen prüfen:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-rote-ampel-fuessen.html">Rote Ampel Füssen</a>
-<a href="einspruch-rote-ampel-immenstadt.html">Rote Ampel Immenstadt im Allgäu</a>
-<a href="einspruch-rote-ampel-wismar.html">Rote Ampel Wismar</a>
-<a href="einspruch-rote-ampel-bensheim.html">Rote Ampel Bensheim</a>
-<a href="einspruch-rote-ampel-usedom.html">Rote Ampel Usedom (Stadt)</a>
-<a href="einspruch-rote-ampel-magdeburg2.html">Rote Ampel Magdeburg</a>
+      <a href="einspruch-rote-ampel-ulm.html">Rote Ampel Ulm</a>
+<a href="einspruch-rote-ampel-oldenburg.html">Rote Ampel Oldenburg</a>
+<a href="einspruch-rote-ampel-merzig.html">Rote Ampel Merzig</a>
+<a href="einspruch-rote-ampel-wernigerode.html">Rote Ampel Wernigerode</a>
+<a href="einspruch-rote-ampel-hamburg-harburg.html">Rote Ampel Hamburg-Harburg</a>
+<a href="einspruch-rote-ampel-bretten.html">Rote Ampel Bretten</a>
 
     </div>
   </div>
@@ -329,7 +329,7 @@ function getAmpelText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat, d
     text += `Der Vorwurf wird vollumfänglich und dem Grunde nach bestritten. Insbesondere bestreite ich die ordnungsgemäße Eichung und Ausrichtung der im Boden verlegten Induktionsschleifen sowie die zweifelsfreie Zuordnung der Beweisfotos zu meinem Fahrzeug. Die Abgabe einer weiteren, vertiefenden Stellungnahme bleibt ausdrücklich dem Abschluss der vollständigen Akteneinsicht vorbehalten.`;
   }
 
-  text += `\n\nIch bitte um eine schriftliche Bestätigung über den fristgerechten Eingang dieses Einspruchs sowie um Übersendung der angeforderten Unterlagen.\n\nMit freundlichen Grüßen`;
+  text += `\n\nIch bitte um eine schriftliche Bestätigung über den fristgerechten Eingang dieses Einspruchs sowie um Übersendung der angeforderten Unterlagen.`;
   return text;
 }
 
@@ -352,7 +352,7 @@ document.getElementById('btnEmail').addEventListener('click', function() {
     return;
   }
 
-  const fullText = getAmpelText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, dauer, freitextStr) + `\n\n${sName}`;
+  const fullText = getAmpelText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, dauer, freitextStr) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
   
   navigator.clipboard.writeText(fullText).then(() => {
     alert("Text erfolgreich kopiert! (Für Einfügen im Online-Portal der Behörde)\\n\\nZusätzlich öffnet sich jetzt Ihr E-Mail-Programm.");

@@ -1,46 +1,222 @@
 [
-  { "name": "Lidl", "slug": "lidl" },
-  { "name": "REWE", "slug": "rewe" },
-  { "name": "ALDI NORD", "slug": "aldi-nord" },
-  { "name": "ALDI SUED", "slug": "aldi-sued" },
-  { "name": "EDEKA", "slug": "edeka" },
-  { "name": "Netto", "slug": "netto" },
-  { "name": "Penny", "slug": "penny" },
-  { "name": "McDonald's", "slug": "mcdonalds" },
-  { "name": "dm-drogerie markt", "slug": "dm" },
-  { "name": "Rossmann", "slug": "rossmann" },
-  { "name": "Kaufland", "slug": "kaufland" },
-  { "name": "Burger King", "slug": "burger-king" },
-  { "name": "KFC (Kentucky Fried Chicken)", "slug": "kfc" },
-  { "name": "Müller", "slug": "mueller" },
-  { "name": "Norma", "slug": "norma" },
-  { "name": "famila", "slug": "famila" },
-  { "name": "Marktkauf", "slug": "marktkauf" },
-  { "name": "Globus", "slug": "globus" },
-  { "name": "tegut...", "slug": "tegut" },
-  { "name": "Hit", "slug": "hit" },
-  { "name": "V-Markt", "slug": "v-markt" },
-  { "name": "obi", "slug": "obi" },
-  { "name": "Hornbach", "slug": "hornbach" },
-  { "name": "Bauhaus", "slug": "bauhaus" },
-  { "name": "toom Baumarkt", "slug": "toom" },
-  { "name": "Hagebaumarkt", "slug": "hagebau" },
-  { "name": "MediaMarkt", "slug": "mediamarkt" },
-  { "name": "Saturn", "slug": "saturn" },
-  { "name": "IKEA", "slug": "ikea" },
-  { "name": "Roller", "slug": "roller" },
-  { "name": "Poco", "slug": "poco" },
-  { "name": "Kik", "slug": "kik" },
-  { "name": "Takko Fashion", "slug": "takko" },
-  { "name": "Deichmann", "slug": "deichmann" },
-  { "name": "Ernsting's family", "slug": "ernstings-family" },
-  { "name": "Action", "slug": "action" },
-  { "name": "Thomas Philipps", "slug": "thomas-philipps" },
-  { "name": "Fressnapf", "slug": "fressnapf" },
-  { "name": "Das Futterhaus", "slug": "futterhaus" },
-  { "name": "Decathlon", "slug": "decathlon" },
-  { "name": "Fitness First", "slug": "fitness-first" },
-  { "name": "McFIT", "slug": "mcfit" },
-  { "name": "FitX", "slug": "fitx" },
-  { "name": "Clever Fit", "slug": "clever-fit" }
+  {
+    "name": "Lidl",
+    "slug": "lidl",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei Lidl erhalten?</h3><p>Der Wocheneinkauf bei Lidl ist erledigt, doch unter dem Scheibenwischer wartet eine böse Überraschung: Ein privates Parkknöllchen. Häufig wird im Einkaufsstress nur vergessen, die Parkscheibe einzulegen oder die Höchstparkdauer wurde knapp überschritten.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "REWE",
+    "slug": "rewe",
+    "infobox": "<div class='infobox'><h3>Ticket auf dem REWE-Parkplatz?</h3><p>Wer bei REWE einkauft, rechnet nicht mit hohen Zusatzkosten. Doch viele Filialen lassen ihre Parkflächen streng von externen Firmen bewirtschaften. Ein fehlender Nachweis oder eine abgelaufene Zeit führt sofort zur Vertragsstrafe.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt (\"Ich war doch nur kurz im Laden...\"), outet sich meist ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "ALDI NORD",
+    "slug": "aldi-nord",
+    "infobox": "<div class='infobox'><h3>Knöllchen bei ALDI NORD abwehren</h3><p>Die Parkplätze bei ALDI NORD sind oft heiß begehrt, weshalb vermehrt Kamerasysteme oder externe Kontrolleure eingesetzt werden. Trifft es echte Kunden, ist der Ärger über die Zahlungsaufforderung groß.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie am Steuer saßen. Mit unserem Generator erstellen Sie stattdessen einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "ALDI SUED",
+    "slug": "aldi-sued",
+    "infobox": "<div class='infobox'><h3>Abzocke auf dem ALDI SÜD Parkplatz?</h3><p>Ein kurzer Stopp bei ALDI SÜD kann teuer werden, wenn man die Beschilderung der privaten Parkraumbewirtschafter übersieht. Die verlangten Vertragsstrafen sind oft unverhältnismäßig hoch.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Ticket-Aussteller. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "EDEKA",
+    "slug": "edeka",
+    "infobox": "<div class='infobox'><h3>Strafzettel beim EDEKA-Einkauf</h3><p>Viele EDEKA-Märkte haben das Parkplatzmanagement ausgelagert. Wer hier beim Frische-Einkauf die Parkscheibe vergisst, findet prompt ein teures Knöllchen am Auto.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Netto",
+    "slug": "netto",
+    "infobox": "<div class='infobox'><h3>Privates Ticket bei Netto Marken-Discount</h3><p>Die Jagd nach Angeboten bei Netto endet nicht selten mit einem saftigen Strafzettel. Die Kontrolleure der Fremdfirmen kennen beim Überschreiten der Höchstparkdauer oder vergessenen Parkscheiben keine Kulanz.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt, outet sich meist ungewollt als Fahrer (\"Ich hab doch dort eingekauft...\"). Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "Penny",
+    "slug": "penny",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei Penny erhalten?</h3><p>Ein schneller Einkauf bei Penny – und schon klemmt eine Zahlungsaufforderung unter dem Wischer. Die privaten Parkplatzüberwacher sind schnell zur Stelle, wenn die Parkregeln nicht exakt eingehalten werden.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber per Mail kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie gefahren sind. Mit unserem Generator erstellen Sie einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "McDonald's",
+    "slug": "mcdonalds",
+    "infobox": "<div class='infobox'><h3>Knöllchen auf dem McDonald's Parkplatz?</h3><p>Mal eben einen Burger bei McDonald's essen und schon kassiert man ein teures Ticket. Viele Fast-Food-Filialen lassen ihre Parkplätze streng überwachen, um Dauerparker fernzuhalten. Leidtragende sind dabei oft echte Gäste.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose Beschwerde-Mail an den Parkraumbewirtschafter. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "dm-drogerie markt",
+    "slug": "dm",
+    "infobox": "<div class='infobox'><h3>Ticket nach dm-Besuch abwehren</h3><p>Nur kurz bei dm Drogerieartikel besorgen – und schon hängt ein gelber Zettel an der Windschutzscheibe. Bei kurzen Besorgungen wird die Parkuhr besonders häufig vergessen.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Rossmann",
+    "slug": "rossmann",
+    "infobox": "<div class='infobox'><h3>Strafzettel auf dem Rossmann-Parkplatz</h3><p>Auf den Kundenparkplätzen von Rossmann wird zunehmend scharf kontrolliert. Wer hier die engen AGB der Parkraumüberwacher übersieht, muss tief in die Tasche greifen.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt, outet sich meist ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "Kaufland",
+    "slug": "kaufland",
+    "infobox": "<div class='infobox'><h3>Abzocke nach Kaufland-Einkauf?</h3><p>Große Kaufland-Filialen bedeuten oft lange Einkaufszeiten. Wer an der Kasse lange anstehen muss, überschreitet ungewollt die erlaubte Parkdauer – und wird vom privaten Betreiber zur Kasse gebeten.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie am Steuer saßen. Mit unserem Generator erstellen Sie stattdessen einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Burger King",
+    "slug": "burger-king",
+    "infobox": "<div class='infobox'><h3>Vertragsstrafe bei Burger King</h3><p>Nach einem Menü bei Burger King folgt oft ein teures Nachspiel. Kamerabasierte Erfassungssysteme protokollieren jede Minute – wer auch nur kurz zu lange bleibt, erhält Post von der Parkfirma.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Ticket-Aussteller. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "KFC (Kentucky Fried Chicken)",
+    "slug": "kfc",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei KFC erhalten?</h3><p>Das Essen bei KFC war gut, doch das böse Erwachen kommt auf dem Parkplatz. Private Kontrolldienste ahnden hier oft schon kleinste Verstöße gegen die Parkordnung rigoros.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Müller",
+    "slug": "mueller",
+    "infobox": "<div class='infobox'><h3>Knöllchen auf dem Müller-Parkplatz?</h3><p>Der Einkauf im Müller-Drogeriemarkt kann teuer enden, wenn man die AGB der beauftragten Parkraumfirma missachtet. Oft fehlen deutliche Hinweisschilder.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt (\"Ich war doch nur einkaufen...\"), outet sich meist ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "Norma",
+    "slug": "norma",
+    "infobox": "<div class='infobox'><h3>Privates Ticket bei Norma</h3><p>Auf den Parkflächen von Norma patrouillieren immer öfter private Kontrolleure. Wer die Ankunftzeit nicht sichtbar hinterlegt, erhält umgehend ein Knöllchen.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie gefahren sind. Mit unserem Generator erstellen Sie einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "famila",
+    "slug": "famila",
+    "infobox": "<div class='infobox'><h3>Strafzettel beim famila-Einkauf</h3><p>Großeinkauf bei famila gemacht und trotzdem ein Ticket kassiert? Das ist extrem ärgerlich. Oft reicht es schon, wenn die Parkscheibe verrutscht ist oder falsch eingestellt wurde.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Parkraumbewirtschafter. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "Marktkauf",
+    "slug": "marktkauf",
+    "infobox": "<div class='infobox'><h3>Ticket nach Marktkauf-Besuch abwehren</h3><p>Bei Marktkauf gibt es alles unter einem Dach – das kostet Zeit. Genau diese Zeit wird Kunden zum Verhängnis, wenn externe Parkplatzwächter gnadenlos abkassieren.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Globus",
+    "slug": "globus",
+    "infobox": "<div class='infobox'><h3>Abzocke auf dem Globus-Parkplatz?</h3><p>Ein Besuch im Globus-Verbrauchermarkt dauert oft länger als geplant. Sensoren oder Kameras auf dem Parkplatz registrieren das und verschicken bei Überziehung der Maximaldauer automatische Knöllchen.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt, outet sich meist ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "tegut...",
+    "slug": "tegut",
+    "infobox": "<div class='infobox'><h3>Knöllchen bei tegut... abwehren</h3><p>Gute Lebensmittel einkaufen und dann eine horrende Vertragsstrafe am Auto finden? Auf tegut... Parkplätzen sorgen private Betreiber oft für unliebsame Überraschungen bei der Kundschaft.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie am Steuer saßen. Mit unserem Generator erstellen Sie stattdessen einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Hit",
+    "slug": "hit",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei Hit erhalten?</h3><p>Viele Hit-Märkte haben die Verwaltung ihrer Parkflächen an Drittfirmen abgegeben. Wer die versteckten Regeln an der Einfahrt nicht liest, zahlt schnell 30 Euro oder mehr.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose Beschwerde-Mail an den Ticket-Aussteller. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "V-Markt",
+    "slug": "v-markt",
+    "infobox": "<div class='infobox'><h3>Vertragsstrafe beim V-Markt</h3><p>Das ausgedehnte Sortiment im V-Markt lädt zum Bummeln ein. Doch Achtung: Die beauftragten Parkraumüberwacher warten nur darauf, dass die kostenfreie Parkzeit abläuft.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "obi",
+    "slug": "obi",
+    "infobox": "<div class='infobox'><h3>Parkknöllchen beim OBI-Besuch?</h3><p>Bei OBI dauert der Einkauf oft länger – Fachberatung, Sperrgut einladen oder Schlangestehen an der Kasse treiben die Parkzeit in die Höhe. Die Kamerasysteme der Überwacher kennen hier leider keine Kulanz.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan schreibt (\"Ich habe ewig auf den Berater gewartet...\"), outet sich ungewollt als Fahrer. Das ist juristisch unklug. Erstellen Sie lieber direkt hier Ihr maßgeschneidertes Widerspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Hornbach",
+    "slug": "hornbach",
+    "infobox": "<div class='infobox'><h3>Strafzettel auf dem Hornbach-Parkplatz</h3><p>Materialbesorgung bei Hornbach mit teuren Folgen? Gerade Baumarkt-Kunden, die schwer schleppen müssen, vergessen im Eifer des Gefechts oft die vorgeschriebene Parkscheibe.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie gefahren sind. Mit unserem Generator erstellen Sie einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Bauhaus",
+    "slug": "bauhaus",
+    "infobox": "<div class='infobox'><h3>Ticket nach Bauhaus-Einkauf abwehren</h3><p>Die großen Bauhaus-Filialen erfordern Zeit. Überschreitet man die erlaubte Parkdauer auch nur um wenige Minuten, verschicken die privaten Betreiberfirmen sofort gnadenlose Zahlungsaufforderungen.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Parkraumbewirtschafter. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "toom Baumarkt",
+    "slug": "toom",
+    "infobox": "<div class='infobox'><h3>Knöllchen bei toom abwehren</h3><p>Ein Besuch im toom Baumarkt endet immer häufiger mit Frust auf dem Parkplatz. Externe Dienstleister setzen die strengen AGB bei vergessenen Parkscheiben konsequent um.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Hagebaumarkt",
+    "slug": "hagebau",
+    "infobox": "<div class='infobox'><h3>Abzocke auf dem Hagebaumarkt-Parkplatz?</h3><p>Pflanzen oder Baumaterial im Hagebaumarkt gekauft – und zur Belohnung ein Knöllchen am Auto. Wer die private Überwachung übersieht, muss mit hohen Vertragsstrafen rechnen.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt, outet sich meist ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "MediaMarkt",
+    "slug": "mediamarkt",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei MediaMarkt erhalten?</h3><p>Technik-Einkauf mit teuren Folgen? Auf den Parkplätzen von MediaMarkt wird streng kontrolliert. Lange Beratungsgespräche im Markt führen schnell zum Überschreiten der Höchstparkdauer.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie am Steuer saßen. Mit unserem Generator erstellen Sie stattdessen einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Saturn",
+    "slug": "saturn",
+    "infobox": "<div class='infobox'><h3>Vertragsstrafe bei Saturn</h3><p>Wer bei Saturn Elektronik shoppt, vergisst leicht die Zeit. Genau darauf spekulieren die privaten Parkraumbewirtschafter, die Parkflächen in Innenstadtlagen rigoros überwachen lassen.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Ticket-Aussteller. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "IKEA",
+    "slug": "ikea",
+    "infobox": "<div class='infobox'><h3>Ticket nach IKEA-Besuch abwehren</h3><p>Ein Ausflug zu IKEA dauert eigentlich immer länger als gedacht. Das wissen auch die Parkraum-Firmen. Wer das Einladen der Möbel nicht schnell genug schafft, erhält gnadenlos ein Ticket.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Roller",
+    "slug": "roller",
+    "infobox": "<div class='infobox'><h3>Knöllchen auf dem Roller-Parkplatz?</h3><p>Möbelkauf bei Roller, das Auto vollgepackt und am Wischer klemmt eine Vertragsstrafe. Das Fehlen einer Parkscheibe wird von den Überwachern sofort mit teuren Rechnungen abgestraft.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt (\"Ich habe Möbel eingeladen...\"), outet sich ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "Poco",
+    "slug": "poco",
+    "infobox": "<div class='infobox'><h3>Strafzettel beim Poco-Einkauf</h3><p>Die Jagd nach Schnäppchen bei Poco endet für manche Kunden mit einem Schock am Auto. Oft ist die Beschilderung der privaten Parkwächter auf den großen Flächen schwer lesbar.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie gefahren sind. Mit unserem Generator erstellen Sie einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Kik",
+    "slug": "kik",
+    "infobox": "<div class='infobox'><h3>Privates Ticket bei Kik</h3><p>Nur schnell ein paar Kleinigkeiten bei Kik besorgen – und schon schnappt die Park-Falle zu. Externe Kontrolleure verteilen Tickets im Sekundentakt, wenn die Parkordnung missachtet wurde.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Parkraumbewirtschafter. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "Takko Fashion",
+    "slug": "takko",
+    "infobox": "<div class='infobox'><h3>Abzocke auf dem Takko-Parkplatz?</h3><p>Mode-Shopping bei Takko kann ein teures Nachspiel haben. Viele Filialparkplätze sind in der Hand von Privatfirmen, die jede fehlende Parkscheibe sofort in Geld umwandeln.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Deichmann",
+    "slug": "deichmann",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei Deichmann erhalten?</h3><p>Schuhe kaufen und als Zugabe ein Knöllchen erhalten? Auf den Parkplätzen vor Deichmann-Filialen patrouillieren oft Kontrolleure, die gezielt nach Fahrzeugen ohne Parknachweis suchen.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt, outet sich meist ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "Ernsting's family",
+    "slug": "ernstings-family",
+    "infobox": "<div class='infobox'><h3>Knöllchen bei Ernsting's family abwehren</h3><p>Familien-Einkauf mit Stresspotenzial: Wer bei Ernsting's family vor der Tür parkt und die oft unscheinbaren AGB-Schilder der Parkfirma übersieht, wird schnell zur Kasse gebeten.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie am Steuer saßen. Mit unserem Generator erstellen Sie stattdessen einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Action",
+    "slug": "action",
+    "infobox": "<div class='infobox'><h3>Ticket nach Action-Besuch abwehren</h3><p>Die Action-Märkte sind beliebt und immer voll. Das ruft private Parkraumüberwacher auf den Plan, die rigoros jeden abstrafen, der ohne Parkscheibe steht oder die Zeit überzieht.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose Beschwerde-Mail an den Ticket-Aussteller. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "Thomas Philipps",
+    "slug": "thomas-philipps",
+    "infobox": "<div class='infobox'><h3>Vertragsstrafe bei Thomas Philipps</h3><p>Wer im Sonderpostenmarkt Thomas Philipps nach Rabatten sucht, verliert sie oft direkt wieder auf dem Parkplatz. Private Knöllchen-Verteiler kennen hier absolut keine Gnade.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "Fressnapf",
+    "slug": "fressnapf",
+    "infobox": "<div class='infobox'><h3>Strafzettel auf dem Fressnapf-Parkplatz</h3><p>Ein kurzer Besuch bei Fressnapf, um Tierfutter zu holen, reicht oft schon aus, um ein teures Ticket eines privaten Betreibers zu kassieren. Die Kontrolldichte ist enorm hoch.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt (\"Ich hab nur schwere Säcke eingeladen...\"), outet sich ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "Das Futterhaus",
+    "slug": "futterhaus",
+    "infobox": "<div class='infobox'><h3>Privates Ticket beim Futterhaus</h3><p>Tierbedarf einkaufen und eine Vertragsstrafe kassieren? Das ist auf den Parkplätzen vom Futterhaus leider keine Seltenheit. Überwachungssysteme erfassen jeden Verstoß sofort.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie gefahren sind. Mit unserem Generator erstellen Sie einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Decathlon",
+    "slug": "decathlon",
+    "infobox": "<div class='infobox'><h3>Abzocke auf dem Decathlon-Parkplatz?</h3><p>Sportausrüstung anprobieren braucht Zeit. Wer bei Decathlon parkt und die Kameras an der Einfahrt nicht registriert, überschreitet schnell die kostenfreie Parkdauer.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose E-Mail an den Parkraumbewirtschafter. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  },
+  {
+    "name": "Fitness First",
+    "slug": "fitness-first",
+    "infobox": "<div class='infobox'><h3>Knöllchen nach dem Fitness First Workout?</h3><p>Nach einem anstrengenden Training bei Fitness First wartet der Schock am Auto: Ein privates Parkticket. Oft vergessen Mitglieder, ihr Kennzeichen drinnen am Tablet-Terminal einzutragen.</p><p><strong>Wichtiger Hinweis:</strong> Verfassen Sie nicht vorschnell eine wütende E-Mail an die Parkfirma! Ein falsches Wort genügt oft, um unbeabsichtigt die Fahrereigenschaft zuzugeben, was einen erfolgreichen Widerspruch deutlich erschwert. Nutzen Sie stattdessen unseren Generator für ein rechtssicheres Einspruchsschreiben.</p></div>"
+  },
+  {
+    "name": "McFIT",
+    "slug": "mcfit",
+    "infobox": "<div class='infobox'><h3>Parkstrafe bei McFIT erhalten?</h3><p>Das Training lief super, doch draußen klemmt ein Knöllchen am Auto. Auf McFIT-Parkplätzen scannen automatische Kameras oft die Kennzeichen – wer sich nicht am Terminal registriert, zahlt.</p><p><strong>Achtung Falle:</strong> Greifen Sie jetzt nicht aus dem ersten Ärger heraus zur Tastatur. Wer spontan eine E-Mail schreibt (\"Ich habe nur mein Kennzeichen im Studio vergessen einzugeben\"), outet sich ungewollt als Fahrer. Das ist juristisch extrem unklug. Erstellen Sie lieber direkt hier Ihren wasserdichten Widerspruch.</p></div>"
+  },
+  {
+    "name": "FitX",
+    "slug": "fitx",
+    "infobox": "<div class='infobox'><h3>Ticket nach FitX-Besuch abwehren</h3><p>Schwitzen bei FitX und danach eine Vertragsstrafe zahlen? Das passiert vielen Mitgliedern, die die strengen Regeln der externen Parkraumbewirtschafter nicht haargenau befolgen.</p><p><strong>Unser Tipp:</strong> Reagieren Sie nicht im Affekt! Wer unüberlegt den Betreiber kontaktiert, liefert unfreiwillig Argumente gegen sich selbst. Vermeiden Sie den Fehler, vorschnell zuzugeben, dass Sie am Steuer saßen. Mit unserem Generator erstellen Sie stattdessen einen formal korrekten Einspruch.</p></div>"
+  },
+  {
+    "name": "Clever Fit",
+    "slug": "clever-fit",
+    "infobox": "<div class='infobox'><h3>Vertragsstrafe bei Clever Fit</h3><p>Viele Clever Fit Studios haben nur begrenzte Parkflächen und lassen diese massiv kontrollieren. Ein kleiner Fehler bei der Eingabe des Kennzeichens reicht oft für ein teures Ticket.</p><p><strong>Bitte beachten:</strong> Schicken Sie auf keinen Fall sofort eine formlose Beschwerde-Mail an den Ticket-Aussteller. Zu oft verplappern sich Betroffene dabei und nehmen sich jede Chance auf eine erfolgreiche Abwehr. Lassen Sie lieber unseren Generator die richtige juristische Formulierung finden.</p></div>"
+  }
 ]

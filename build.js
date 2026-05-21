@@ -56,6 +56,9 @@ let optHandy = "", linkHandy = "";
 parkfirmen.forEach(p => {
     let fName = `knoellchen-widerspruch-${p.slug}.html`;
     let crossLinks = generateCrossLinks(parkfirmen, p, item => `knoellchen-widerspruch-${item.slug}.html`, item => item.name);
+    
+    // NEU: Infobox auslesen (oder leer lassen, falls keine existiert)
+    let infoboxText = p.infobox || ""; 
 
     let content = masterTpl
         .replace(/\{\{FIRMA_NAME\}\}/g, p.name)
@@ -64,7 +67,8 @@ parkfirmen.forEach(p => {
         .replace(/\{\{STADT_NAME\}\}/g, "Ihrer Stadt")      
         .replace(/value="dem Supermarkt, Ihrer Stadt"/g, 'value="" placeholder="z.B. Lidl, Braunschweig"') 
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // NEU: Platzhalter ersetzen
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
@@ -78,6 +82,9 @@ parkfirmen.forEach(p => {
 supermaerkte.forEach(s => {
     let fName = `parkplatz-strafe-${s.slug}.html`;
     let crossLinks = generateCrossLinks(supermaerkte, s, item => `parkplatz-strafe-${item.slug}.html`, item => `${item.name} Parkplatz`);
+
+    // NEU: Infobox auslesen (oder leer lassen, falls keine existiert)
+    let infoboxText = s.infobox || "";
 
     let content = masterTpl
         .replace(/\{\{FIRMA_NAME\}\} Ticket erhalten\? Wehren Sie sich erfolgreich!/g, `Knöllchen auf dem ${s.name}-Parkplatz? So wehren Sie sich!`)
@@ -93,7 +100,8 @@ supermaerkte.forEach(s => {
         .replace(/value=".*, Ihrer Stadt"/g, `value="${s.name}, " placeholder="${s.name}, Stadt eintragen"`)
         
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // NEU: Platzhalter ersetzen
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     

@@ -44,8 +44,8 @@
   <h1>Ordnungsamt Langenhagen: Knöllchen fehlerhaft? Jetzt Einspruch einlegen!</h1>
 
   <div style="text-align: center; margin: 15px 0 30px 0;">
-    <a href="#govtParkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #0d47a1; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-      ⬇ Direkt zum kostenlosen Einspruchs-Generator ⬇
+    <a href="#govtParkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #972028; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      Direkt zum kostenlosen Einspruchs-Generator
     </a>
   </div>
 
@@ -210,12 +210,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte-Bußgeldstellen im Fokus:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-ordnungsamt-mettmann.html">Ordnungsamt Mettmann</a>
-<a href="einspruch-ordnungsamt-oer-erkenschwick.html">Ordnungsamt Oer-Erkenschwick</a>
-<a href="einspruch-ordnungsamt-erkrath.html">Ordnungsamt Erkrath</a>
-<a href="einspruch-ordnungsamt-osnabrueck.html">Ordnungsamt Osnabrück</a>
-<a href="einspruch-ordnungsamt-goslar.html">Ordnungsamt Goslar</a>
-<a href="einspruch-ordnungsamt-illingen-wn.html">Ordnungsamt Illingen</a>
+      <a href="einspruch-ordnungsamt-fuerth.html">Ordnungsamt Fürth</a>
+<a href="einspruch-ordnungsamt-eschwege.html">Ordnungsamt Eschwege</a>
+<a href="einspruch-ordnungsamt-trier.html">Ordnungsamt Trier</a>
+<a href="einspruch-ordnungsamt-menden.html">Ordnungsamt Menden (Sauerland)</a>
+<a href="einspruch-ordnungsamt-waldkraiburg.html">Ordnungsamt Waldkraiburg</a>
+<a href="einspruch-ordnungsamt-zwickau2.html">Ordnungsamt Zwickau</a>
 
     </div>
   </div>
@@ -353,7 +353,7 @@ function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, 
     begrueendung = `Den erhobenen Vorwurf weise ich in Gänze zurück. Die Beweisführung der Behörde ist offenkundig lückenhaft und materiell-rechtlich angreifbar. Ein schuldhaftes Verhalten meinerseits liegt nicht vor. Zur Wahrung meiner Rechte beantrage ich hilfsweise die vollumfängliche Einsicht in die Ermittlungsakte und fordere Sie auf, das Verfahren mangels hinreichendem Tatverdacht unverzüglich einzustellen.`;
   }
 
-  let footerText = `\n\nIch fordere Sie auf, den Bescheid aufzuheben und mir die Einstellung des Verfahrens formgerecht und schriftlich zu bestätigen.\n\nMit freundlichen Grüßen`;
+  let footerText = `\n\nIch fordere Sie auf, den Bescheid aufzuheben und mir die Einstellung des Verfahrens formgerecht und schriftlich zu bestätigen.`;
   
   return headerText + begrueendung + footerText;
 }
@@ -382,7 +382,8 @@ document.getElementById('btnEmail').addEventListener('click', function() {
     return;
   }
 
-  const fullText = getEinspruchText(strategie, schreiben, az, sKennzeichen, sMarke, pOrt, dTat, dBrief, detail, freitext) + `\n\n${sName}`;
+  const fullText = getEinspruchText(strategie, schreiben, az, sKennzeichen, sMarke, pOrt, dTat, dBrief, detail, freitext) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
+  
   
   // In die Zwischenablage kopieren für Online-Portale
   navigator.clipboard.writeText(fullText).then(() => {

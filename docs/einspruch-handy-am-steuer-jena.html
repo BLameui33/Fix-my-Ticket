@@ -82,7 +82,7 @@
 
   <!-- JUMP TO GENERATOR BUTTON -->
   <div style="text-align: center; margin: 30px 0;">
-    <a href="#handyForm" class="button-primary" style="display: inline-block; font-size: 1.1em; padding: 15px 30px; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">🚀 Jetzt direkt zum Einspruchs-Generator springen</a>
+    <a href="#handyForm" class="button-primary" style="display: inline-block; font-size: 1.1em; padding: 15px 30px; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Jetzt direkt zum Einspruchs-Generator springen</a>
   </div>
 
   <div class="quick-facts-box" style="background: #eef5fa; border: 1px solid #b6d4fe; padding: 20px; border-radius: 8px; margin: 25px 0;">
@@ -228,12 +228,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte im Handy-Bußgeld-Check:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-handy-am-steuer-huerth.html">Handyverstoß Hürth</a>
-<a href="einspruch-handy-am-steuer-castrop-rauxel.html">Handyverstoß Castrop-Rauxel</a>
-<a href="einspruch-handy-am-steuer-bergheim.html">Handyverstoß Bergheim</a>
-<a href="einspruch-handy-am-steuer-delmenhorst.html">Handyverstoß Delmenhorst</a>
-<a href="einspruch-handy-am-steuer-monheim.html">Handyverstoß Monheim am Rhein</a>
-<a href="einspruch-handy-am-steuer-usedom.html">Handyverstoß Usedom (Stadt)</a>
+      <a href="einspruch-handy-am-steuer-guenzburg.html">Handyverstoß Günzburg</a>
+<a href="einspruch-handy-am-steuer-hof.html">Handyverstoß Hof</a>
+<a href="einspruch-handy-am-steuer-bernburg.html">Handyverstoß Bernburg (Saale)</a>
+<a href="einspruch-handy-am-steuer-waiblingen.html">Handyverstoß Waiblingen</a>
+<a href="einspruch-handy-am-steuer-besigheim.html">Handyverstoß Besigheim</a>
+<a href="einspruch-handy-am-steuer-uelzen.html">Handyverstoß Uelzen</a>
 
     </div>
   </div>
@@ -367,7 +367,7 @@ function getHandyText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat, c
     text += `Der mir zur Last gelegte Verstoß gegen § 23 StVO wird aus tatsächlichen und rechtlichen Gründen vollumfänglich bestritten. Die Feststellungen der Messbeamten bzw. die Qualität und Auswertung des vorliegenden Bildmaterials weisen augenscheinliche Defizite auf. Eine detaillierte materielle Begründung bleibt nach erfolgter und geprüfter Akteneinsicht vorbehalten.`;
   }
 
-  text += `\n\nIch gehe davon aus, dass Sie nach Prüfung meines Vorbringens und Einsicht in die Originalakte das Verfahren gemäß § 46 Abs. 1 OWiG i.V.m. § 170 Abs. 2 StPO einstellen werden.\n\nUm eine kurze Eingangsbestätigung dieses Schreibens wird gebeten.\n\nMit freundlichen Grüßen`;
+  text += `\n\nIch gehe davon aus, dass Sie nach Prüfung meines Vorbringens und Einsicht in die Originalakte das Verfahren gemäß § 46 Abs. 1 OWiG i.V.m. § 170 Abs. 2 StPO einstellen werden.\n\nUm eine kurze Eingangsbestätigung dieses Schreibens wird gebeten.`;
   return text;
 }
 
@@ -390,7 +390,8 @@ document.getElementById('btnEmail').addEventListener('click', function() {
     return;
   }
 
-  const fullText = getHandyText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, customText) + `\n\n${sName}`;
+  const fullText = getHandyText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, customText) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
+  
   
   navigator.clipboard.writeText(fullText).then(() => {
     alert("Copied! Der Einspruchstext wurde in Ihre Zwischenablage kopiert. Sie können ihn jetzt direkt in das Online-Anhörungsportal der Behörde einfügen.\\n\\nZusätzlich öffnet sich nun Ihr E-Mail-Programm.");

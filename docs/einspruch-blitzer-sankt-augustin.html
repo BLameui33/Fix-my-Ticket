@@ -73,7 +73,7 @@
   <!-- NEU: Jump Button direkt zum Generator -->
   <div style="text-align: center; margin-bottom: 25px;">
       <a href="#speedingForm" style="display: inline-block; background: #d32f2f; color: #fff; padding: 12px 24px; font-size: 1.1em; font-weight: bold; border-radius: 6px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">
-        ⬇ Direkt zum kostenlosen Einspruch-Generator ⬇
+         Direkt zum kostenlosen Einspruch-Generator
       </a>
   </div>
 
@@ -230,12 +230,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte & Regionen im Blitzer-Check:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-blitzer-sigmaringen.html">Blitzer Sigmaringen</a>
-<a href="einspruch-blitzer-wittmund.html">Blitzer Wittmund</a>
-<a href="einspruch-blitzer-muenster.html">Blitzer Münster</a>
-<a href="einspruch-blitzer-herten.html">Blitzer Herten</a>
-<a href="einspruch-blitzer-bergkamen.html">Blitzer Bergkamen</a>
-<a href="einspruch-blitzer-tirschenreuth.html">Blitzer Tirschenreuth</a>
+      <a href="einspruch-blitzer-warendorf.html">Blitzer Warendorf</a>
+<a href="einspruch-blitzer-marktheidenfeld.html">Blitzer Marktheidenfeld</a>
+<a href="einspruch-blitzer-radolfzell.html">Blitzer Radolfzell am Bodensee</a>
+<a href="einspruch-blitzer-garmisch-partenkirchen.html">Blitzer Garmisch-Partenkirchen</a>
+<a href="einspruch-blitzer-sigmaringen.html">Blitzer Sigmaringen</a>
+<a href="einspruch-blitzer-leinfelden-echterdingen.html">Blitzer Leinfelden-Echterdingen</a>
 
     </div>
   </div>
@@ -386,9 +386,7 @@ Gleichzeitig rüge ich ausdrücklich die formelle sowie materielle Rechtmäßigk
 
   text += `
 
-Sollten die angeforderten Beweismittel nicht beigebracht werden können oder die Aktenlage lückenhaft sein, beantrage ich bereits jetzt die sofortige und kostenpflichtige Einstellung des Verfahrens. 
-
-Mit freundlichen Grüßen`;
+Sollten die angeforderten Beweismittel nicht beigebracht werden können oder die Aktenlage lückenhaft sein, beantrage ich bereits jetzt die sofortige und kostenpflichtige Einstellung des Verfahrens.`;
   return text;
 }
 
@@ -414,8 +412,7 @@ document.getElementById('btnEmail').addEventListener('click', function() {
     return;
   }
 
-  const fullText = getBlitzerText(strategie, schreiben, az, sKennzeichen, "", pOrt, dTat, soll, ist, zonierung, freitext) + `
-${sName}`;
+  const fullText = getBlitzerText(strategie, schreiben, az, sKennzeichen, "", pOrt, dTat, soll, ist, zonierung, freitext) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
   
   navigator.clipboard.writeText(fullText).then(() => {
     alert("Kopiert! Der juristische Einspruchstext wurde kopiert. Fügen Sie diesen nun z.B. im Online-Anhörungsportal der Behörde ein.\n\nZusätzlich öffnet sich Ihr E-Mail-Programm.");

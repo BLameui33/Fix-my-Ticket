@@ -99,8 +99,13 @@
 <div class="page-container">
   <h1>Abstandsverstoß in Cham? So wehren Sie ein Fahrverbot ab!</h1>
   
-  <!-- Neuer Sprung-Button -->
-  <a href="#abstandForm" class="jump-btn">⬇️ Direkt zum kostenlosen Einspruchs-Generator springen</a>
+  
+
+  <div style="text-align: center; margin: 25px 0;">
+    <a href="#abstandForm" class="button-primary" style="padding: 15px 30px; font-size: 1.1em; text-decoration: none; border-radius: 6px; display: inline-block; background-color: #d32f2f; color: white; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+      Direkt zum kostenlosen Einspruchs-Generator springen
+    </a>
+  </div>
 
   <div class="back-to-hub-banner">
     <a href="blitzer-bussgeld-info.html">
@@ -241,12 +246,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte & Regionen prüfen:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-abstandsverstoss-marburg2.html">Abstandsmessung Marburg</a>
-<a href="einspruch-abstandsverstoss-weimar.html">Abstandsmessung Weimar</a>
-<a href="einspruch-abstandsverstoss-hagen.html">Abstandsmessung Hagen</a>
-<a href="einspruch-abstandsverstoss-castrop-rauxel.html">Abstandsmessung Castrop-Rauxel</a>
-<a href="einspruch-abstandsverstoss-oelde.html">Abstandsmessung Oelde</a>
-<a href="einspruch-abstandsverstoss-nordhorn.html">Abstandsmessung Nordhorn</a>
+      <a href="einspruch-abstandsverstoss-kehl.html">Abstandsmessung Kehl</a>
+<a href="einspruch-abstandsverstoss-viernheim.html">Abstandsmessung Viernheim</a>
+<a href="einspruch-abstandsverstoss-altenburg.html">Abstandsmessung Altenburg</a>
+<a href="einspruch-abstandsverstoss-cloppenburg.html">Abstandsmessung Cloppenburg</a>
+<a href="einspruch-abstandsverstoss-suhl.html">Abstandsmessung Suhl</a>
+<a href="einspruch-abstandsverstoss-lemgo.html">Abstandsmessung Lemgo</a>
 
     </div>
   </div>
@@ -379,7 +384,7 @@ function getAbstandText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat,
     text += `Der mir zur Last gelegte Abstandsverstoß wird in vollem Umfang bestritten. Insbesondere bestreite ich die technisch einwandfreie Justierung der Videomessanlage sowie die korrekte und manuelle Schablonenauswertung zur Ermittlung des exakten Abstands. Die detaillierte Begründung bleibt nach Einsichtnahme in die vollständigen Videoaufzeichnungen ausdrücklich vorbehalten.`;
   }
 
-  text += `\n\nIch erwarte die umgehende Übersendung einer schriftlichen Eingangsbestätigung dieses Einspruchs sowie die Gewährung der beantragten Akteneinsicht.\n\nMit freundlichen Grüßen`;
+  text += `\n\nIch erwarte die umgehende Übersendung einer schriftlichen Eingangsbestätigung dieses Einspruchs sowie die Gewährung der beantragten Akteneinsicht.`;
   return text;
 }
 
@@ -408,7 +413,7 @@ document.getElementById('btnEmail').addEventListener('click', function() {
     return;
   }
 
-  const fullText = getAbstandText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, pUhrzeit, tempo, abstand) + `\n\n${sName}`;
+  const fullText = getAbstandText(strategie, schreiben, az, sKennzeichen, pOrt, dTat, pUhrzeit, tempo, abstand) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
   
   navigator.clipboard.writeText(fullText).then(() => {
     alert("Copied! Der Text wurde kopiert. Sie können ihn jetzt im Online-Portal der Bußgeldstelle einfügen.\n\nZusätzlich öffnet sich Ihr E-Mail-Programm.");

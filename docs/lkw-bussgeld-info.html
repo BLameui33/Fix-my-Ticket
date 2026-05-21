@@ -13,6 +13,61 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
 
+  <style>
+    /* WICHTIG: Behebt das Problem, dass Elemente auf Mobilgeräten über den rechten Rand ragen */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      max-width: 100vw;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 15px; /* Etwas Abstand am Rand für Handys */
+    }
+
+    .hub-content, .trust-section, footer {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Container, damit die Tabelle auf dem Handy seitlich wischbar ist */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 30px;
+      background: #fff;
+    }
+
+    /* Styling für das aufklappbare SEO/Städte-Menü */
+    details.seo-links {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    
+    details.seo-links summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+      font-size: 1.1em;
+      outline: none;
+    }
+
+    /* Akzentfarbe angepasst an dieses Dokument (#aa3131) */
+    details.seo-links summary:hover {
+      color: #aa3131;
+    }
+
+    @media (min-width: 768px) {
+      body { padding: 30px; }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,12 +103,11 @@
   
   <p>Da die Erfassung von Lenk- und Ruhezeiten primär über die digitale Auswertung des Tachografen erfolgt, stützen sich behördliche Vorwürfe meist auf standardisierte Datensätze. Hierbei bleiben unvorhersehbare Sondersituationen im Straßenverkehr (wie akuter Parkplatzmangel oder unfallbedingte Sperrungen) in automatisierten Bescheiden oft unberücksichtigt, obwohl der Gesetzgeber hierfür spezifische Ausnahme- und Abwägungstatbestände vorsieht.</p>
 
-  <div class="legal-info-box" style="border-left-color: #aa3131; background: #e3f2fd; padding: 15px; border-left-width: 5px; margin: 20px 0;">
+  <div class="legal-info-box" style="border-left-color: #aa3131; background: #e3f2fd; padding: 15px; border-left-width: 5px; border-left-style: solid; margin: 20px 0; border-radius: 4px;">
     <strong>Verfahrensrechtlicher Hinweis zur Adressierung von Bescheiden:</strong><br>
     Bei Verstößen im Transportwesen ergehen Bußgeldbescheide häufig zweigleisig: separat an den angestellten Fahrer sowie im Rahmen der Halterverantwortlichkeit oder des Verfallsverfahrens an das Unternehmen. Für beide Parteien gilt ab der jeweiligen Zustellung eine eigenständige, gesetzliche Einspruchsfrist von genau 14 Tagen gemäß § 67 Ordnungswidrigkeitengesetz (OWiG).
   </div>
 
-  <!-- YMYL: Sachliche Darstellung verfahrensrechtlicher Kernbereiche -->
   <h2 style="margin-top: 40px;">Typische Prüffelder im Transportrecht</h2>
   <p>Im Rahmen der verkehrsrechtlichen Überprüfung behördlicher Sanktionen stehen meist formelle Anforderungen und die Einhaltung technischer Richtlinien im Fokus des Interesses:</p>
   <ul>
@@ -62,35 +116,38 @@
     <li><strong>Zurechnung von Pflichtverletzungen:</strong> Es ist im Einzelfall zu prüfen, ob ein Verstoß (z. B. im Bereich der Ladungssicherung) im alleinigen Verantwortungsbereich des Fahrers, des Verladers oder des Fahrzeughalters lag.</li>
   </ul>
 
-  <!-- WARTUNGSFREIE MATRIX: Verantwortung & Rechtsgrundlagen statt volatile Euro-Beträge -->
   <h2 style="margin-top: 40px;">Verantwortlichkeiten nach deutschem Transportrecht</h2>
   <p>Die rechtliche Zuordnung von Zuwiderhandlungen im Straßengüterverkehr ist gesetzlich strikt zwischen Fahrpersonal und Unternehmensführung bzw. Verkehrsleitung aufgeteilt:</p>
-  <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 0.95em;">
-    <thead>
-      <tr style="background-color: #f1f1f1; border-bottom: 2px solid #ccc;">
-        <th style="padding: 10px; text-align: left;">Bereich</th>
-        <th style="padding: 10px; text-align: left;">Verantwortung: Fahrer</th>
-        <th style="padding: 10px; text-align: left;">Verantwortung: Unternehmer / Halter</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;"><strong>Lenk- & Ruhezeiten</strong><br><small>(VO (EG) Nr. 561/2006)</small></td>
-        <td style="padding: 10px;">Einhaltung der täglichen Fahrt- und Pausenzeiten; korrekte manuelle Nachträge.</td>
-        <td style="padding: 10px;">Dispositions- und Überwachungspflicht; regelmäßiges Auslesen und Archivieren der Daten.</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;"><strong>Zulässiges Gesamtgewicht</strong><br><small>(§ 34 StVZO)</small></td>
-        <td style="padding: 10px;">Überprüfung des Fahrzeugzustands vor Fahrtantritt; Abbruch bei offensichtlicher Überladung.</td>
-        <td style="padding: 10px;">Verbot der Anordnung oder Zulassung von Fahrten mit überladenen Fahrzeugen.</td>
-      </tr>
-      <tr style="border-bottom: 1px solid #eee;">
-        <td style="padding: 10px;"><strong>Ladungssicherung</strong><br><small>(§ 22 StVZO)</small></td>
-        <td style="padding: 10px;">Verantwortung für die betriebssichere Verladung während der Beförderung.</td>
-        <td style="padding: 10px;">Bereitstellung geeigneter Zurrmittel; beförderungssichere Beladung (gilt auch für den Verlader).</td>
-      </tr>
-    </tbody>
-  </table>
+  
+  <!-- HIER WURDE DIE TABELLE UMHÜLLT, DAMIT SIE MOBIL NICHT ÜBERLAPPT -->
+  <div class="table-responsive">
+    <table style="width: 100%; min-width: 600px; border-collapse: collapse; font-size: 0.95em;">
+      <thead>
+        <tr style="background-color: #f1f1f1; border-bottom: 2px solid #ccc;">
+          <th style="padding: 10px; text-align: left;">Bereich</th>
+          <th style="padding: 10px; text-align: left;">Verantwortung: Fahrer</th>
+          <th style="padding: 10px; text-align: left;">Verantwortung: Unternehmer / Halter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px;"><strong>Lenk- & Ruhezeiten</strong><br><small>(VO (EG) Nr. 561/2006)</small></td>
+          <td style="padding: 10px;">Einhaltung der täglichen Fahrt- und Pausenzeiten; korrekte manuelle Nachträge.</td>
+          <td style="padding: 10px;">Dispositions- und Überwachungspflicht; regelmäßiges Auslesen und Archivieren der Daten.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px;"><strong>Zulässiges Gesamtgewicht</strong><br><small>(§ 34 StVZO)</small></td>
+          <td style="padding: 10px;">Überprüfung des Fahrzeugzustands vor Fahrtantritt; Abbruch bei offensichtlicher Überladung.</td>
+          <td style="padding: 10px;">Verbot der Anordnung oder Zulassung von Fahrten mit überladenen Fahrzeugen.</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #eee;">
+          <td style="padding: 10px;"><strong>Ladungssicherung</strong><br><small>(§ 22 StVZO)</small></td>
+          <td style="padding: 10px;">Verantwortung für die betriebssichere Verladung während der Beförderung.</td>
+          <td style="padding: 10px;">Bereitstellung geeigneter Zurrmittel; beförderungssichere Beladung (gilt auch für den Verlader).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <!-- Router-Box -->
   <div class="router-box" style="background: #fff; border: 2px solid #aa3131; border-radius: 8px; padding: 25px; margin: 40px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
@@ -688,6 +745,7 @@
 <option value="einspruch-lkw-bussgeld-chemnitz2.html">LKW-Kontrolle Chemnitz</option>
 <option value="einspruch-lkw-bussgeld-magdeburg2.html">LKW-Kontrolle Magdeburg</option>
 <option value="einspruch-lkw-bussgeld-halle2.html">LKW-Kontrolle Halle (Saale)</option>
+<option value="einspruch-lkw-bussgeld-allgemein.html">LKW-Kontrolle Ihrer Stadt</option>
 
         </select>
         <button onclick="routeTo('routeLkw')" class="button-primary" style="padding: 10px 20px; background: #aa3131; color: #fff; font-weight: bold; border: none; border-radius: 4px; cursor: pointer;">Prüfung starten</button>
@@ -695,23 +753,22 @@
     </div>
   </div>
 
-  <!-- YMYL: Aufklärung über formelle Vorgaben statt Verhaltens-Tricks -->
   <h2 style="margin-top: 50px;">Informationsblatt: Dokumentationsanforderungen bei Kontrollverfahren</h2>
   <p>Die verfahrensrechtliche Beurteilung von Unregelmäßigkeiten im Kontrollprotokoll hängt maßgeblich von der lückenlosen Einhaltung formeller Vorschriften ab:</p>
   
-  <div class="checklist-box" id="checklistToPrint" style="background: #f1f8e9; border-left: 5px solid #aa3131; padding: 20px; margin-bottom: 20px;">
+  <!-- HIER WURDE OVERFLOW-WRAP HINZUGEFÜGT DAMIT DIE CHECKLISTE MOBIL NICHT NACH RECHTS RAGT -->
+  <div class="checklist-box" id="checklistToPrint" style="background: #f1f8e9; border-left: 5px solid #aa3131; padding: 20px; margin-bottom: 20px; overflow-wrap: break-word; word-wrap: break-word;">
     <h3 style="margin-top:0;">Rechtliche Leitlinien zur Nachweiserbringung:</h3>
-    <ul style="line-height: 1.8; margin-bottom: 0;">
+    <ul style="line-height: 1.8; margin-bottom: 0; padding-left: 20px;">
       <li><strong>Inanspruchnahme von Ausnahmebestimmungen (Art. 12 VO):</strong> Liegt eine unvorhersehbare Abweichung von den Lenkzeiten vor, fordert der Gesetzgeber zwingend einen manuellen Ausdruck des Kontrollgeräts zum Zeitpunkt des Halts. Die Begründung (z. B. Parkplatzüberlastung) muss sachlich auf der Rückseite dokumentiert werden.</li>
       <li><strong>Dokumentation des Messumfelds bei Achslastwägungen:</strong> Bei Durchführung mobiler Wägungen empfiehlt sich die genaue Betrachtung der Beschaffenheit der Messstelle. Neigungswinkel oder Fahrbahnschäden sind für das Messprotokoll von Relevanz.</li>
       <li><strong>Aussageverweigerungsrecht im Ermittlungsverfahren:</strong> Betroffene Fahrer sowie Unternehmensvertreter sind gesetzlich nicht verpflichtet, Angaben zur Sache zu machen, die über die reinen Identitätsdaten (§ 111 OWiG) hinausgehen. Unbedachte mündliche Angaben zur Intention einer Fahrt können den Vorwurf des Vorsatzes begründen.</li>
     </ul>
   </div>
-  <button onclick="generateChecklistPDF('lkw-verfahrens-informationsblatt.pdf')" class="button-secondary" data-html2canvas-ignore="true" style="cursor:pointer; font-weight: bold; padding: 10px 15px; border: 1px solid #ccc; border-radius: 4px; background: #f9f9f9;">
+  <button onclick="generateChecklistPDF('lkw-verfahrens-informationsblatt.pdf')" class="button-secondary" data-html2canvas-ignore="true" style="cursor:pointer; font-weight: bold; padding: 10px 15px; border: 1px solid #ccc; border-radius: 4px; background: #f9f9f9; display: inline-flex; align-items: center; gap: 8px;">
     📥 Informationsblatt für das Fahrerhaus als PDF speichern
   </button>
 
-  <!-- FAQ BEREICH -->
   <h2 style="margin-top: 50px;">Häufige Fragen (FAQ) zum Güterkraftverkehrsrecht</h2>
   <div style="margin-bottom: 20px;">
     <h3 style="font-size: 1.1em; color: #333;">Gibt es gesetzliche Ausnahmen bei der Überschreitung von Lenkzeiten?</h3>
@@ -722,7 +779,7 @@
     <p>Mobile Kontrollwaagen des BALM unterliegen strengen verfahrensrechtlichen Aufstellbedingungen nach den Vorgaben der Physikalisch-Technischen Bundesanstalt. Messungen auf unebenem, nicht ausreichend tragfähigem Untergrund oder bei erheblichem Neigungswinkel der Verkehrsfläche können zu einer fehlerhaften Gewichtsermittlung führen und die Verwertbarkeit des Messergebnisses im Bußgeldverfahren beeinflussen.</p>
   </div>
 
-  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 40px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
+  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 40px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative; overflow-wrap: break-word;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
     <div style="font-size: 2em; line-height: 1;">🛡️</div>
     <div>
@@ -740,11 +797,15 @@
     <h2>Regionale BALM- & Bußgeldstellen im Überblick</h2>
     <p style="color: #666;">Wählen Sie hier direkt die zuständige Region oder Behördenniederlassung aus:</p>
     
-    <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
-      <div style="flex: 1; min-width: 250px;">
-        <h3 style="color: #333;">LKW-Einsprüche nach Städten</h3>
-        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.95em;">
-          <a href="einspruch-lkw-bussgeld-berlin.html">LKW-Kontrolle Berlin</a>
+    <!-- HIER IST DER FIX FÜR DIE LINK-MASSE: Das Accordion (details/summary) -->
+    <details class="seo-links">
+      <summary>🗺️ Alle Regionen & Behörden anzeigen</summary>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
+        <div style="flex: 1; min-width: 250px;">
+          <h3 style="color: #333; font-size: 1.1em;">LKW-Einsprüche nach Städten</h3>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.95em; word-break: break-all;">
+            <a href="einspruch-lkw-bussgeld-berlin.html">LKW-Kontrolle Berlin</a>
 <a href="einspruch-lkw-bussgeld-muenchen.html">LKW-Kontrolle München</a>
 <a href="einspruch-lkw-bussgeld-hamburg.html">LKW-Kontrolle Hamburg</a>
 <a href="einspruch-lkw-bussgeld-koeln.html">LKW-Kontrolle Köln</a>
@@ -1330,10 +1391,14 @@
 <a href="einspruch-lkw-bussgeld-chemnitz2.html">LKW-Kontrolle Chemnitz</a>
 <a href="einspruch-lkw-bussgeld-magdeburg2.html">LKW-Kontrolle Magdeburg</a>
 <a href="einspruch-lkw-bussgeld-halle2.html">LKW-Kontrolle Halle (Saale)</a>
+<a href="einspruch-lkw-bussgeld-allgemein.html">LKW-Kontrolle Ihrer Stadt</a>
 
+          </div>
         </div>
       </div>
-    </div>
+    </details>
+    <!-- ENDE Accordion Fix -->
+
   </div>
 
 </div>
@@ -1392,12 +1457,15 @@ function routeTo(selectId) {
 
 function generateChecklistPDF(filename) {
     const element = document.getElementById('checklistToPrint');
+    
+    // HIER WURDE DER PDF-FIX EINGEBAUT (pagebreak hinzugefügt)
     const opt = {
         margin:       15,
         filename:     filename,
         image:        { type: 'jpeg', quality: 0.98 },
         html2canvas:  { scale: 2, scrollY: 0, windowWidth: document.documentElement.offsetWidth },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
     };
     html2pdf().set(opt).from(element).save();
 }
