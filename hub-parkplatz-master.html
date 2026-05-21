@@ -146,20 +146,29 @@
   <h2 style="margin-top: 50px;">Verfahrenshinweise bei privaten Zahlungsaufforderungen</h2>
   <p>Sollten Sie ein Ticket an Ihrem Fahrzeug vorfinden, empfiehlt sich eine strukturierte Erfassung des Sachverhalts, um potenzielle formelle Mängel der Forderung zu dokumentieren:</p>
   
-  <!-- HIER WURDE OVERFLOW-WRAP HINZUGEFÜGT DAMIT DIE CHECKLISTE MOBIL NICHT NACH RECHTS RAGT -->
-  <div class="checklist-box" id="checklistToPrint" style="background: #f1f8e9; border-left: 5px solid #aa3131; padding: 20px; margin-bottom: 20px; overflow-wrap: break-word; word-wrap: break-word;">
-    <h3 style="margin-top:0;">Rechtliche Leitlinien zur Sachverhaltsprüfung:</h3>
-    <ul style="line-height: 1.8; margin-bottom: 0; padding-left: 20px;">
-      <li><strong>Prüfung vor Zahlung:</strong> Eine vorbehaltlose Begleichung des geforderten Betrages kann rechtlich als Anerkenntnis der Pflichtverletzung gewertet werden. Eine formelle Überprüfung der Anspruchsgrundlage sollte daher im Vorfeld erfolgen.</li>
-      <li><strong>Identität des Fahrzeugführers:</strong> Ein Nutzungsvertrag über eine Parkfläche wird ausschließlich mit dem tatsächlichen Fahrer geschlossen. Im Zivilrecht besteht für den Halter grundsätzlich keine gesetzliche Pflicht zur Benennung des Fahrers, sofern keine Grundsätze der sekundären Darlegungslast im gerichtlichen Einzelfall greifen. Mündliche Einlassungen gegenüber dem Betreiber sollten den Fahrer nicht unbedacht offenlegen.</li>
-      <li><strong>Dokumentation der Beschilderung:</strong> Für eine wirksame Einbeziehung Allgemeiner Geschäftsbedingungen gemäß § 305 BGB ist eine gut sichtbare, gut lesbare und unmissverständliche Beschilderung im Einfahrtsbereich zwingend erforderlich. Fotos von verdeckten, unbeleuchteten oder beschädigten Schildern dienen im Verfahren als wesentliches Beweismittel.</li>
-      <li><strong>Prüfung optischer Erfassungssysteme (Scanner):</strong> Soweit die Parkdauer mittels automatischer Kennzeichenerfassung registriert wird, müssen Hinweisschilder gemäß Art. 13 DSGVO transparent und vor dem eigentlichen Erfassungsvorgang angebracht sein.</li>
-      <li><strong>Sicherung von Belegen:</strong> Sofern der Parkvorgang während eines Einkaufs in einer angeschlossenen Filiale stattfand, dokumentiert der Kassenbon den Kundenstatus. Viele Auftraggeber (z. B. Einzelhandelsketten) veranlassen bei Vorlage des Bons eine kulanzweise Stornierung der vertraglichen Forderung durch den Dienstleister.</li>
-    </ul>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px;">
+    
+    <div style="background: #fff; border: 1px solid #eee; border-left: 4px solid #aa3131; padding: 20px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+      <h4 style="margin-top: 0; margin-bottom: 10px; color: #333;">Prüfung vor Zahlung</h4>
+      <p style="margin: 0; font-size: 0.95em; color: #555; line-height: 1.5;">Eine vorbehaltlose Zahlung kann rechtlich als Anerkenntnis gewertet werden. Die Forderung sollte daher vor einer Überweisung immer erst auf formelle Mängel geprüft werden.</p>
+    </div>
+
+    <div style="background: #fff; border: 1px solid #eee; border-left: 4px solid #aa3131; padding: 20px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+      <h4 style="margin-top: 0; margin-bottom: 10px; color: #333;">Fahrer vs. Halter</h4>
+      <p style="margin: 0; font-size: 0.95em; color: #555; line-height: 1.5;">Ein Nutzungsvertrag kommt nur mit dem tatsächlichen Fahrer zustande. Im Zivilrecht besteht für den Halter grundsätzlich keine Pflicht, den Fahrer gegenüber dem Parkplatzbetreiber zu benennen.</p>
+    </div>
+
+    <div style="background: #fff; border: 1px solid #eee; border-left: 4px solid #aa3131; padding: 20px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+      <h4 style="margin-top: 0; margin-bottom: 10px; color: #333;">Beschilderung prüfen</h4>
+      <p style="margin: 0; font-size: 0.95em; color: #555; line-height: 1.5;">Für eine wirksame AGB-Einbeziehung ist eine unmissverständliche Beschilderung bei der Einfahrt zwingend. Fotos von verdeckten Schildern dienen als wesentliches Beweismittel.</p>
+    </div>
+
+    <div style="background: #fff; border: 1px solid #eee; border-left: 4px solid #aa3131; padding: 20px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+      <h4 style="margin-top: 0; margin-bottom: 10px; color: #333;">Kassenbons aufbewahren</h4>
+      <p style="margin: 0; font-size: 0.95em; color: #555; line-height: 1.5;">Falls der Parkvorgang während eines Einkaufs stattfand, beweist der Bon den Kundenstatus. Oft kann die Filialleitung damit eine kulanzweise Stornierung der Forderung veranlassen.</p>
+    </div>
+
   </div>
-  <button onclick="generateChecklistPDF('parkplatz-verfahrens-informationsblatt.pdf')" class="button-secondary" data-html2canvas-ignore="true" style="cursor:pointer; font-weight: bold; padding: 10px 15px; border: 1px solid #ccc; border-radius: 4px; background: #f9f9f9; display: inline-flex; align-items: center; gap: 8px;">
-    📥 Informationsblatt als PDF speichern
-  </button>
 
   <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #aa3131; padding: 15px 20px; margin: 40px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative; overflow-wrap: break-word;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
@@ -288,20 +297,7 @@ function routeTo(selectId) {
     }
 }
 
-function generateChecklistPDF(filename) {
-    const element = document.getElementById('checklistToPrint');
-    
-    // HIER WURDE DER PDF-FIX EINGEBAUT (pagebreak hinzugefügt)
-    const opt = {
-        margin:       15,
-        filename:     filename,
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, scrollY: 0, windowWidth: document.documentElement.offsetWidth },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-    html2pdf().set(opt).from(element).save();
-}
+
 </script>
 
 </body>
