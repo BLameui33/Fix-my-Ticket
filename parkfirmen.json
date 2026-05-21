@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Park & Control PAC GmbH",
+    "slug": "park-und-control",
+    "email": "service@park-control.de"
+  },
+  {
+    "name": "fair parken GmbH",
+    "slug": "fair-parken",
+    "email": "info@fairparken.com"
+  },
+  {
+    "name": "Playfair Parking GmbH",
+    "slug": "playfair-parking",
+    "email": "info@playfair-parking.de"
+  },
+  {
+    "name": "PRS Parkraum Service GmbH",
+    "slug": "prs-parkraum-service",
+    "email": "info@parkraumservice.de"
+  },
+  {
+    "name": "Contipark (Servipark Deutschland GmbH)",
+    "slug": "contipark",
+    "email": "impressum@mein-contipark.de"
+  },
+  {
+    "name": "APCOA PARKING Deutschland GmbH",
+    "slug": "apcoa",
+    "email": "service@apcoa.de"
+  },
+  {
+    "name": "ParkDepot GmbH",
+    "slug": "parkdepot",
+    "email": "info@park-depot.de"
+  },
+  {
+    "name": "B+B Parkhaus GmbH & Co. KG",
+    "slug": "bb-parkhaus",
+    "email": "info@bb-parkhaus.de"
+  },
+  {
+    "name": "Q-Park Operations Germany GmbH",
+    "slug": "q-park",
+    "email": "servicecenter@q-park.de"
+  },
+  {
+    "name": "K+S Parkraumservice GmbH",
+    "slug": "ks-parkraumservice",
+    "email": "info@parkraum.de"
+  },
+  {
+    "name": "PRM ParkRaum-Management GmbH",
+    "slug": "prm-parkraum-management",
+    "email": "info@prm-parking.com"
+  },
+  {
+    "name": "Loyal Parking Deutschland GmbH",
+    "slug": "loyal-parking",
+    "email": "info@loyalparking.com"
+  },
+  {
+    "name": "Mobility Hub Parkservice GmbH",
+    "slug": "mobility-hub-parkservice",
+    "email": "support@mh-parkservice.de"
+  },
+  {
+    "name": "BetterPark (Nexobility GmbH)",
+    "slug": "betterpark",
+    "email": "info@betterpark.de"
+  },
+  {
+    "name": "Wemolo GmbH",
+    "slug": "wemolo",
+    "email": "help@wemolo.de"
+  },
+  {
+    "name": "Peter Park System GmbH",
+    "slug": "peter-park",
+    "email": "info@peter-park.de"
+  },
+  {
+    "name": "EPM Deutschland (Eastrella GmbH)",
+    "slug": "epm-deutschland",
+    "email": "contact@epm-deutschland.de"
+  }
+]
