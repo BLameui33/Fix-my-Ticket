@@ -210,12 +210,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte-Bußgeldstellen im Fokus:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-ordnungsamt-kamp-lintfort.html">Ordnungsamt Kamp-Lintfort</a>
-<a href="einspruch-ordnungsamt-kornwestheim.html">Ordnungsamt Kornwestheim</a>
-<a href="einspruch-ordnungsamt-muehldorf.html">Ordnungsamt Mühldorf a.Inn</a>
-<a href="einspruch-ordnungsamt-helmstedt.html">Ordnungsamt Helmstedt</a>
-<a href="einspruch-ordnungsamt-glauchau.html">Ordnungsamt Glauchau</a>
-<a href="einspruch-ordnungsamt-dresden.html">Ordnungsamt Dresden</a>
+      <a href="einspruch-ordnungsamt-muehlacker.html">Ordnungsamt Mühlacker</a>
+<a href="einspruch-ordnungsamt-ulm.html">Ordnungsamt Ulm</a>
+<a href="einspruch-ordnungsamt-leverkusen.html">Ordnungsamt Leverkusen</a>
+<a href="einspruch-ordnungsamt-essen.html">Ordnungsamt Essen</a>
+<a href="einspruch-ordnungsamt-osterholz-scharmbeck.html">Ordnungsamt Osterholz-Scharmbeck</a>
+<a href="einspruch-ordnungsamt-alzey.html">Ordnungsamt Alzey</a>
 
     </div>
   </div>
@@ -328,7 +328,9 @@ document.getElementById('pStrategie').addEventListener('change', function() {
   }
 });
 
-/* ── Juristische Textbausteine generieren (Knackig & Anspruchsvoll) ── */
+document.getElementById('pStrategie').dispatchEvent(new Event('change'));
+
+
 /* ── Juristische Textbausteine generieren (Knackig & Anspruchsvoll) ── */
 function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, datumTat, datumBrief, detail, freitext) {
   let headerText = `FORM- UND FRISTGERECHTER EINSPRUCH\n`;
@@ -348,7 +350,7 @@ function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, 
   else if (strategie === "freitext") ruegeTitel = "Individuelle Sachverhaltsschilderung";
 
   // Die Überschrift optisch hervorgehoben in den Text einfügen
-  headerText += `--- RÜGE / BEGRÜNDUNG: ${ruegeTitel.toUpperCase()} ---\n\n`;
+  headerText += `- RÜGE / BEGRÜNDUNG: ${ruegeTitel.toUpperCase()} -\n\n`;
 
   let begrueendung = "";
   if (strategie === "zahlendreher") {
