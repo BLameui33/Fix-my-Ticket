@@ -210,12 +210,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte-Bußgeldstellen im Fokus:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-ordnungsamt-gemuenden-am-main.html">Ordnungsamt Gemünden am Main</a>
-<a href="einspruch-ordnungsamt-aurich.html">Ordnungsamt Aurich</a>
-<a href="einspruch-ordnungsamt-pfarrkirchen.html">Ordnungsamt Pfarrkirchen</a>
-<a href="einspruch-ordnungsamt-greiz.html">Ordnungsamt Greiz</a>
-<a href="einspruch-ordnungsamt-hagen.html">Ordnungsamt Hagen</a>
-<a href="einspruch-ordnungsamt-jueterbog.html">Ordnungsamt Jüterbog</a>
+      <a href="einspruch-ordnungsamt-wuppertal.html">Ordnungsamt Wuppertal</a>
+<a href="einspruch-ordnungsamt-spremberg.html">Ordnungsamt Spremberg</a>
+<a href="einspruch-ordnungsamt-halberstadt.html">Ordnungsamt Halberstadt</a>
+<a href="einspruch-ordnungsamt-waren-mueritz.html">Ordnungsamt Waren (Müritz)</a>
+<a href="einspruch-ordnungsamt-rietberg.html">Ordnungsamt Rietberg</a>
+<a href="einspruch-ordnungsamt-haltern.html">Ordnungsamt Haltern am See</a>
 
     </div>
   </div>
@@ -329,18 +329,32 @@ document.getElementById('pStrategie').addEventListener('change', function() {
 });
 
 /* ── Juristische Textbausteine generieren (Knackig & Anspruchsvoll) ── */
+/* ── Juristische Textbausteine generieren (Knackig & Anspruchsvoll) ── */
 function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, datumTat, datumBrief, detail, freitext) {
   let headerText = `FORM- UND FRISTGERECHTER EINSPRUCH\n`;
-  headerText += `gegen das ${schreibenTyp} mit dem Aktenzeichen / Vorgangsnummer: ${az}\n`;
+  headerText += `gegen: ${schreibenTyp} mit dem Aktenzeichen / Vorgangsnummer: ${az}\n`;
   headerText += `Fahrzeug: ${marke}, amtliches Kennzeichen: ${kennzeichen}\n\n`;
   headerText += `Sehr geehrte Damen und Herren,\n\n`;
   headerText += `gegen den von Ihnen erlassenen Bescheid wegen eines behaupteten Park-/Halteverstoßes vom ${datumTat} am Tatort ${ort} lege ich hiermit vollumfänglich und fristgerecht\n\n`;
   headerText += `>>> EINSPRUCH <<<\n\n`;
   headerText += `ein. Ich weise den gegen mich erhobenen Vorwurf mit Nachdruck zurück und begründe dies wie folgt:\n\n`;
 
+  // NEU: Eindeutige Rüge-Überschrift generieren, damit das Ordnungsamt den Grund sofort sieht
+  let ruegeTitel = "Allgemeine Begründung";
+  if (strategie === "zahlendreher") ruegeTitel = "Formeller Mangel / Fehlerhafte Erfassung (Zahlendreher)";
+  else if (strategie === "parkautomat") ruegeTitel = "Defekter Parkscheinautomat gem. § 13 Abs. 1 StVO";
+  else if (strategie === "verjaehrung") ruegeTitel = "Eintritt der Verfolgungsverjährung gem. § 26 StVG";
+  else if (strategie === "beschilderung") ruegeTitel = "Fehlende Sichtbarkeit / Erkennbarkeit der Beschilderung";
+  else if (strategie === "freitext") ruegeTitel = "Individuelle Sachverhaltsschilderung";
+
+  // Die Überschrift optisch hervorgehoben in den Text einfügen
+  headerText += `--- RÜGE / BEGRÜNDUNG: ${ruegeTitel.toUpperCase()} ---\n\n`;
+
   let begrueendung = "";
   if (strategie === "zahlendreher") {
-    begrueendung = `Der erlassene Bescheid leidet an einem eklatanten formellen Mangel, da essenzielle Tatbestandsmerkmale von Ihren Mitarbeitern fehlerhaft erfasst wurden. Konkret rüge ich folgenden Fehler:\n${detail}.\n\nDurch diese fehlerhafte Erfassung des Fahrzeugs oder des Tatorts verstößt der Bescheid gegen das zwingende rechtsstaatliche Bestimmtheitsgebot. Eine zweifelsfreie und rechtssichere Zuordnung der Tat ist somit objektiv unmöglich. Ich fordere die unverzügliche Einstellung des Verfahrens gem. § 46 OWiG i.V.m. § 170 Abs. 2 StPO.`;
+    // Falls das Feld leer gelassen wurde, einen Platzhalter einfügen
+    const detailText = detail ? detail : "[Bitte genauen Fehler eintragen, z.B. falsches Kennzeichen]";
+    begrueendung = `Der erlassene Bescheid leidet an einem eklatanten formellen Mangel, da essenzielle Tatbestandsmerkmale von Ihren Mitarbeitern fehlerhaft erfasst wurden. Konkret rüge ich folgenden Fehler:\n\n${detailText}\n\nDurch diese fehlerhafte Erfassung des Fahrzeugs oder des Tatorts verstößt der Bescheid gegen das zwingende rechtsstaatliche Bestimmtheitsgebot. Eine zweifelsfreie und rechtssichere Zuordnung der Tat ist somit objektiv unmöglich. Ich fordere die unverzügliche Einstellung des Verfahrens gem. § 46 OWiG i.V.m. § 170 Abs. 2 StPO.`;
   } else if (strategie === "parkautomat") {
     begrueendung = `Der am Tatort zuständige Parkscheinautomat war zum vorgeworfenen Tatzeitpunkt nachweislich defekt und außer Betrieb (z.B. Display schwarz / Münzeinwurf blockiert). Gemäß § 13 Abs. 1 StVO entfällt in einem solchen Fall der objektiven Unmöglichkeit die Pflicht zum Lösen eines Parkscheins, es greift das Recht zur Ersatzvornahme. Eine zugelassene mechanische Parkscheibe war vorschriftsmäßig und unübersehbar auf dem Armaturenbrett meines Fahrzeugs ausgelegt. Die zulässige Höchstparkdauer wurde strikt eingehalten. Eine Ahndung ist rechtswidrig, weshalb ich die sofortige Einstellung des Verfahrens beantrage. Ein Beweisfoto des Defekts kann nachgereicht werden.`;
   } else if (strategie === "verjaehrung") {
@@ -348,7 +362,7 @@ function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, 
   } else if (strategie === "beschilderung") {
     begrueendung = `Der Bescheid stützt sich auf eine Beschilderung (Verkehrszeichen), die zum Tatzeitpunkt für mich als Verkehrsteilnehmer schlichtweg nicht erkennbar war. Gemäß der ständigen Rechtsprechung unterliegen Verkehrszeichen als Allgemeinverfügungen dem strengen verkehrsrechtlichen Sichtbarkeitsprinzip. Ein Schild muss mit einem beiläufigen Blick zweifelsfrei erfasst werden können. Das hier maßgebliche Schild war jedoch (durch massiven Bewuchs verdeckt / eingeschneit / durch Fahrzeuge zugeparkt) und entfaltete somit keine Rechtswirkung. Ein Beweisverwertungsverbot steht im Raum. Ich rege die Einstellung an.`;
   } else if (strategie === "freitext") {
-    begrueendung = freitext;
+    begrueendung = freitext ? freitext : "[Ihre individuelle Begründung fehlt. Bitte ergänzen.]";
   } else {
     begrueendung = `Den erhobenen Vorwurf weise ich in Gänze zurück. Die Beweisführung der Behörde ist offenkundig lückenhaft und materiell-rechtlich angreifbar. Ein schuldhaftes Verhalten meinerseits liegt nicht vor. Zur Wahrung meiner Rechte beantrage ich hilfsweise die vollumfängliche Einsicht in die Ermittlungsakte und fordere Sie auf, das Verfahren mangels hinreichendem Tatverdacht unverzüglich einzustellen.`;
   }
@@ -442,9 +456,21 @@ document.getElementById('govtParkForm').addEventListener('submit', function(e) {
   // Empfänger (Behörde - Passgenau für Fenster)
   doc.setFontSize(11);
   doc.setTextColor(0, 0, 0);
-  doc.text(behoerde, 25, 53);
-  doc.text(behoerdeStrasse, 25, 58);
-  doc.text(behoerdePLZOrt, 25, 63);
+
+  // BEHEBUNG: Zeilenumbruch für lange Behördennamen (max. 90mm Breite), damit sie nicht in den Absender ragen
+  const maxBehoerdeWidth = 90; 
+  const behoerdeLines = doc.splitTextToSize(behoerde, maxBehoerdeWidth);
+  let empfangerY = 53;
+
+  // Iteriere durch die umgebrochenen Zeilen des Behördennamens
+  for(let i = 0; i < behoerdeLines.length; i++) {
+    doc.text(behoerdeLines[i], 25, empfangerY);
+    empfangerY += 5; // Y-Achse um 5mm pro Zeile nach unten verschieben
+  }
+
+  // Straße und Ort dynamisch unter dem Behördennamen platzieren
+  doc.text(behoerdeStrasse, 25, empfangerY);
+  doc.text(behoerdePLZOrt, 25, empfangerY + 5);
 
   // Absender Block Rechts
   doc.setFontSize(10);

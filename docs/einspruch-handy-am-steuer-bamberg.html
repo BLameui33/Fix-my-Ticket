@@ -143,6 +143,10 @@
       <legend style="background: #d32f2f; color: #fff;">2. Daten des Schreibens & Behörde</legend>
       <label>Zuständige Bußgeldstelle / Behörde:</label>
       <input type="text" id="pBehoerde" value="Zentrale Bußgeldstelle Bamberg" required>
+      <label>Straße / Postfach der Behörde:</label>
+      <input type="text" id="pBehoerdeStrasse" placeholder="z.B. Postfach 12 34 oder Musterstraße 1" required>
+      <label>PLZ und Ort der Behörde:</label>
+      <input type="text" id="pBehoerdeOrt" placeholder="z.B. 12345 Bamberg" required>
       <label>E-Mail der Behörde (für Online-Anhörung):</label>
       <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@bamberg.de">
       <label>Aktenzeichen (siehe Brief oben rechts):</label>
@@ -228,12 +232,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte im Handy-Bußgeld-Check:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-handy-am-steuer-ravensburg.html">Handyverstoß Ravensburg</a>
-<a href="einspruch-handy-am-steuer-altena.html">Handyverstoß Altena</a>
-<a href="einspruch-handy-am-steuer-frankfurt.html">Handyverstoß Frankfurt am Main</a>
-<a href="einspruch-handy-am-steuer-fuerstenfeldbruck.html">Handyverstoß Fürstenfeldbruck</a>
-<a href="einspruch-handy-am-steuer-haan.html">Handyverstoß Haan</a>
-<a href="einspruch-handy-am-steuer-dormagen.html">Handyverstoß Dormagen</a>
+      <a href="einspruch-handy-am-steuer-kirchheim-muenchen.html">Handyverstoß Kirchheim bei München</a>
+<a href="einspruch-handy-am-steuer-remscheid.html">Handyverstoß Remscheid</a>
+<a href="einspruch-handy-am-steuer-duesseldorf.html">Handyverstoß Düsseldorf</a>
+<a href="einspruch-handy-am-steuer-lauterbach.html">Handyverstoß Lauterbach (Hessen)</a>
+<a href="einspruch-handy-am-steuer-langenhagen.html">Handyverstoß Langenhagen</a>
+<a href="einspruch-handy-am-steuer-bruehl.html">Handyverstoß Brühl</a>
 
     </div>
   </div>
@@ -413,11 +417,13 @@ document.getElementById('handyForm').addEventListener('submit', function(e) {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
 
-  const behoerde  = document.getElementById('pBehoerde').value;
-  const schreiben = document.getElementById('pSchreibenTyp').value;
-  const az        = document.getElementById('pAktenzeichen').value;
+  const behoerde        = document.getElementById('pBehoerde').value;
+  const behoerdeStrasse = document.getElementById('pBehoerdeStrasse').value;
+  const behoerdeOrt     = document.getElementById('pBehoerdeOrt').value;
+  const schreiben       = document.getElementById('pSchreibenTyp').value;
+  const az              = document.getElementById('pAktenzeichen').value;
   
-  // Absenderdaten (nun ganz oben erfasst)
+  // Absenderdaten
   const sName     = document.getElementById('sName').value;
   const sStrasse  = document.getElementById('sStrasse').value;
   const sPLZOrt   = document.getElementById('sPLZOrt').value;
@@ -441,10 +447,12 @@ document.getElementById('handyForm').addEventListener('submit', function(e) {
   doc.setDrawColor(150, 150, 150);
   doc.line(25, 46.5, 95, 46.5);
 
-  // Empfänger
+  // Empfänger (Behördenadresse) mit angepasster Y-Positionierung
   doc.setFontSize(11);
   doc.setTextColor(0, 0, 0);
   doc.text(behoerde, 25, 53);
+  doc.text(behoerdeStrasse, 25, 58);
+  doc.text(behoerdeOrt, 25, 63);
 
   // Absender Rechts (Briefkopf)
   doc.setFontSize(10);

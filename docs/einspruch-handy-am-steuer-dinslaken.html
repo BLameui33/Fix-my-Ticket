@@ -143,6 +143,10 @@
       <legend style="background: #d32f2f; color: #fff;">2. Daten des Schreibens & Behörde</legend>
       <label>Zuständige Bußgeldstelle / Behörde:</label>
       <input type="text" id="pBehoerde" value="Zentrale Bußgeldstelle Dinslaken" required>
+      <label>Straße / Postfach der Behörde:</label>
+      <input type="text" id="pBehoerdeStrasse" placeholder="z.B. Postfach 12 34 oder Musterstraße 1" required>
+      <label>PLZ und Ort der Behörde:</label>
+      <input type="text" id="pBehoerdeOrt" placeholder="z.B. 12345 Dinslaken" required>
       <label>E-Mail der Behörde (für Online-Anhörung):</label>
       <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@dinslaken.de">
       <label>Aktenzeichen (siehe Brief oben rechts):</label>
@@ -228,12 +232,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Städte im Handy-Bußgeld-Check:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-handy-am-steuer-heilbronn.html">Handyverstoß Heilbronn</a>
-<a href="einspruch-handy-am-steuer-wuppertal.html">Handyverstoß Wuppertal</a>
-<a href="einspruch-handy-am-steuer-forchheim.html">Handyverstoß Forchheim</a>
-<a href="einspruch-handy-am-steuer-emsdetten.html">Handyverstoß Emsdetten</a>
-<a href="einspruch-handy-am-steuer-villingen-schwenningen.html">Handyverstoß Villingen-Schwenningen</a>
-<a href="einspruch-handy-am-steuer-grevenbroich.html">Handyverstoß Grevenbroich</a>
+      <a href="einspruch-handy-am-steuer-saarwellingen.html">Handyverstoß Saarwellingen</a>
+<a href="einspruch-handy-am-steuer-guestrow.html">Handyverstoß Güstrow</a>
+<a href="einspruch-handy-am-steuer-bad-kreuznach.html">Handyverstoß Bad Kreuznach</a>
+<a href="einspruch-handy-am-steuer-frankenthal.html">Handyverstoß Frankenthal (Pfalz)</a>
+<a href="einspruch-handy-am-steuer-baden-baden.html">Handyverstoß Baden-Baden</a>
+<a href="einspruch-handy-am-steuer-chemnitz.html">Handyverstoß Chemnitz</a>
 
     </div>
   </div>
@@ -413,11 +417,13 @@ document.getElementById('handyForm').addEventListener('submit', function(e) {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
 
-  const behoerde  = document.getElementById('pBehoerde').value;
-  const schreiben = document.getElementById('pSchreibenTyp').value;
-  const az        = document.getElementById('pAktenzeichen').value;
+  const behoerde        = document.getElementById('pBehoerde').value;
+  const behoerdeStrasse = document.getElementById('pBehoerdeStrasse').value;
+  const behoerdeOrt     = document.getElementById('pBehoerdeOrt').value;
+  const schreiben       = document.getElementById('pSchreibenTyp').value;
+  const az              = document.getElementById('pAktenzeichen').value;
   
-  // Absenderdaten (nun ganz oben erfasst)
+  // Absenderdaten
   const sName     = document.getElementById('sName').value;
   const sStrasse  = document.getElementById('sStrasse').value;
   const sPLZOrt   = document.getElementById('sPLZOrt').value;
@@ -441,10 +447,12 @@ document.getElementById('handyForm').addEventListener('submit', function(e) {
   doc.setDrawColor(150, 150, 150);
   doc.line(25, 46.5, 95, 46.5);
 
-  // Empfänger
+  // Empfänger (Behördenadresse) mit angepasster Y-Positionierung
   doc.setFontSize(11);
   doc.setTextColor(0, 0, 0);
   doc.text(behoerde, 25, 53);
+  doc.text(behoerdeStrasse, 25, 58);
+  doc.text(behoerdeOrt, 25, 63);
 
   // Absender Rechts (Briefkopf)
   doc.setFontSize(10);
