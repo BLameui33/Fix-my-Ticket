@@ -1,0 +1,394 @@
+[
+  {
+    "name": "BVG (Berliner Verkehrsbetriebe)",
+    "slug": "bvg-berlin",
+    "stadt": "Berlin",
+    "email": "info@bvg.de",
+    "infobox": "<strong>Gut zu wissen für Berlin:</strong> Die BVG kontrolliert extrem häufig mit zivilen Teams in der U-Bahn und Tram. Wichtig: Bei App-Störungen der BVG-Ticket-App (z.B. Jelbi oder Fahrinfo) machen Sie am besten sofort einen Screenshot der Fehlermeldung als Beweis."
+  },
+  {
+    "name": "KVB (Kölner Verkehrs-Betriebe)",
+    "slug": "kvb-koeln",
+    "stadt": "Köln",
+    "email": "kundendialog@kvb.koeln",
+    "infobox": "<strong>Gut zu wissen für Köln:</strong> Die KVB zeigt sich bei defekten Entwertern in der Bahn oft kulant, sofern Sie die Wagennummer der Straßenbahn notiert haben. Diese befindet sich im Fahrzeug meist über den Türen oder am Fahrerhaus."
+  },
+  {
+    "name": "MVG (Münchner Verkehrsgesellschaft)",
+    "slug": "mvg-muenchen",
+    "stadt": "München",
+    "email": "kundendialog@mvg.de",
+    "infobox": "<strong>Gut zu wissen für München:</strong> Die MVG arbeitet teils mit externen Inkasso-Dienstleistern, wenn die 60 Euro nicht fristgerecht gezahlt werden. Bei vergessenen personalisierten IsarCards oder dem Deutschlandticket genügt oft das rasche Vorzeigen im Kundencenter am Hauptbahnhof oder Marienplatz, um die Strafe auf 7 € zu reduzieren."
+  },
+  {
+    "name": "DB Regio (Deutsche Bahn)",
+    "slug": "db-regio",
+    "stadt": "Deutschlandweit (Regionalverkehr)",
+    "email": "kundendialog@bahn.de",
+    "infobox": "<strong>Gut zu wissen bei der DB Regio:</strong> Wenn Sie im Regionalexpress (RE/RB) kontrolliert werden und der Automat am Start-Bahnhof defekt war, sind Sie laut Eisenbahn-Verkehrsordnung (EVO) verpflichtet, sich sofort unaufgefordert beim Zugpersonal zu melden, um das Ticket im Zug nachzulösen (ohne Aufpreis)."
+  },
+  {
+    "name": "Hamburger Hochbahn AG",
+    "slug": "hochbahn-hamburg",
+    "stadt": "Hamburg",
+    "email": "info@hochbahn.de",
+    "infobox": "<strong>Gut zu wissen für Hamburg:</strong> Im HVV-Gebiet gilt oft das Prinzip des 'prüffreien Einstiegs', jedoch finden regelmäßig Schwerpunktkontrollen an Haltestellen oder in den U-Bahnen statt. Ein wegen leeren Handy-Akkus nicht vorzeigbares Digital-Ticket zählt zunächst als Fahren ohne Fahrschein."
+  },
+  {
+    "name": "VGF (Verkehrsgesellschaft Frankfurt am Main)",
+    "slug": "vgf-frankfurt",
+    "stadt": "Frankfurt am Main",
+    "email": "info@vgf-ffm.de",
+    "infobox": "<strong>Gut zu wissen für Frankfurt:</strong> Wenn der Ticketautomat in der Tram defekt ist, muss beim Fahrer nachgefragt oder die nächste App-Lösung genutzt werden. Bei Ticket-Kontrollen gleicht das Personal Störungsmeldungen von Automaten oft direkt per Funk ab."
+  },
+  {
+    "name": "SSB (Stuttgarter Straßenbahnen AG)",
+    "slug": "ssb-stuttgart",
+    "stadt": "Stuttgart",
+    "email": "kundenzentrum@ssb-ag.de",
+    "infobox": "<strong>Gut zu wissen für Stuttgart:</strong> Die SSB setzt häufig Kontrollteams in Zivilkleidung in den Stadtbahnen ein. Bei unverschuldeten App-Verzögerungen im VVS wird meist Kulanz gewährt, wenn der Ticketkauf nachweislich vor Fahrtantritt (bzw. vor Einfahrt der Bahn) angestoßen wurde."
+  },
+  {
+    "name": "Rheinbahn AG",
+    "slug": "rheinbahn-duesseldorf",
+    "stadt": "Düsseldorf",
+    "email": "kundendialog@rheinbahn.de",
+    "infobox": "<strong>Gut zu wissen für Düsseldorf:</strong> Bei der Rheinbahn können falsche Stempel auf Mehrfahrtenkarten schnell zu einem Erhöhten Beförderungsentgelt (EBE) führen. Achten Sie genau auf die Pfeile auf der Karte. Wer sein personalisiertes Ticket vergisst, zahlt meist nur eine Bearbeitungsgebühr bei nachträglicher Vorlage."
+  },
+  {
+    "name": "LVB (Leipziger Verkehrsbetriebe)",
+    "slug": "lvb-leipzig",
+    "stadt": "Leipzig",
+    "email": "verkehrsbetriebe@l.de",
+    "infobox": "<strong>Gut zu wissen für Leipzig:</strong> Fahrkartenautomaten in den Straßenbahnen der LVB akzeptieren oft nur bargeldlose Zahlung oder Münzen. Fällt der Automat im Fahrzeug aus, melden Sie sich umgehend beim Fahrpersonal, um nicht als Schwarzfahrer zu gelten."
+  },
+  {
+    "name": "DVB (Dresdner Verkehrsbetriebe)",
+    "slug": "dvb-dresden",
+    "stadt": "Dresden",
+    "email": "service@dvbag.de",
+    "infobox": "<strong>Gut zu wissen für Dresden:</strong> Die DVB nutzt meist gelbe Ticketautomaten in den Fahrzeugen. Sollte die Zahlung nicht funktionieren, machen Sie zur Sicherheit ein Foto vom Display. Bei nachgewiesenen technischen Störungen im Fahrzeug zeigt sich die DVB meist kulant."
+  },
+  {
+    "name": "BSAG (Bremer Straßenbahn AG)",
+    "slug": "bsag-bremen",
+    "stadt": "Bremen",
+    "email": "info@bsag.de",
+    "infobox": "<strong>Gut zu wissen für Bremen:</strong> Wer in Bremen die App nutzt, muss darauf achten, dass das Ticket (und der Barcode) vollständig geladen ist, bevor er das Fahrzeug betritt. Das Kaufen des Tickets erst nach Einstieg bei Sichtung der Kontrolleure wird geahndet."
+  },
+  {
+    "name": "ÜSTRA Hannoversche Verkehrsbetriebe",
+    "slug": "uestra-hannover",
+    "stadt": "Hannover",
+    "email": "info@uestra.de",
+    "infobox": "<strong>Gut zu wissen für Hannover:</strong> Die ÜSTRA führt regelmäßig auffällige 'Großkontrollen' mit viel Personal (auch in Kooperation mit der Polizei) an Knotenpunkten durch. Tickets müssen in Hannover oft bereits auf dem Bahnsteig am Automaten entwertet werden."
+  },
+  {
+    "name": "VAG Verkehrs-Aktiengesellschaft Nürnberg",
+    "slug": "vag-nuernberg",
+    "stadt": "Nürnberg",
+    "email": "service@vag.de",
+    "infobox": "<strong>Gut zu wissen für Nürnberg:</strong> Bei der U-Bahn in Nürnberg befinden sich die Entwerter bereits an den Zugängen (im Sperrengeschoss). Wer erst in der U-Bahn abstempeln will, wird zur Kasse gebeten, da es im Zug selbst keine Entwerter gibt."
+  },
+  {
+    "name": "DSW21 (Dortmunder Stadtwerke)",
+    "slug": "dsw21-dortmund",
+    "stadt": "Dortmund",
+    "email": "posteingang@dsw21.de",
+    "infobox": "<strong>Gut zu wissen für Dortmund:</strong> Die DSW21 verlangt bei vergessenen personalisierten Tickets ebenfalls eine nachträgliche Vorlage im KundenCenter (z.B. an der Kampstraße), wodurch die 60 € Strafgebühr auf eine geringe Bearbeitungspauschale reduziert werden."
+  },
+  {
+    "name": "Ruhrbahn GmbH",
+    "slug": "ruhrbahn-essen-muelheim",
+    "stadt": "Essen & Mülheim an der Ruhr",
+    "email": "info@ruhrbahn.de",
+    "infobox": "<strong>Gut zu wissen für Essen/Mülheim:</strong> Da in der Region viele Städte und Tarifgebiete aneinandergrenzen (VRR), kommt es oft zu Irrtümern bei Tarifgrenzen. Kontrollieren Sie bei Fahrten in Nachbarstädte immer zwingend, ob Ihre gewählte Preisstufe ausreicht."
+  },
+  {
+    "name": "VBK (Verkehrsbetriebe Karlsruhe)",
+    "slug": "vbk-karlsruhe",
+    "stadt": "Karlsruhe",
+    "email": "kundenzentrum@kvv.karlsruhe.de",
+    "infobox": "<strong>Gut zu wissen für Karlsruhe:</strong> Die Karlsruher Zweisystem-Stadtbahnen fahren oft fließend vom Innenstadtnetz in das Netz der Deutschen Bahn (Umland). Achten Sie unbedingt auf die entsprechenden Tarifzonenwaben, wenn Sie das Stadtgebiet verlassen."
+  },
+  {
+    "name": "BOGESTRA (Bochum-Gelsenkirchener Straßenbahnen AG)",
+    "slug": "bogestra-bochum-gelsenkirchen",
+    "stadt": "Bochum & Gelsenkirchen",
+    "email": "info@bogestra.de",
+    "infobox": "<strong>Gut zu wissen für Bochum/Gelsenkirchen:</strong> Im VRR-Verbund gelten bei der BOGESTRA dieselben Tarifregeln wie bei den Nachbarbetrieben. Besonders bei Fahrten über Stadtgrenzen hinweg (z.B. Richtung Herne oder Witten) lohnt sich ein Blick auf die korrekte Preisstufe, da Kontrollen an Umsteigehaltestellen häufig vorkommen."
+  },
+  {
+    "name": "SWB Bus und Bahn (Stadtwerke Bonn)",
+    "slug": "swb-bonn",
+    "stadt": "Bonn",
+    "email": "info@swb-busundbahn.de",
+    "infobox": "<strong>Gut zu wissen für Bonn:</strong> Im VRS-Verbund (Verkehrsverbund Rhein-Sieg) gelten für Fahrten in Richtung Köln oder Koblenz eigene Tarifgrenzen. Wer mit einem Bonner Stadtticket in die Kölner Innenstadt fährt, riskiert ein Erhöhtes Beförderungsentgelt von 60 €."
+  },
+  {
+    "name": "Straßenbahn Augsburg GmbH (SWA)",
+    "slug": "swa-augsburg",
+    "stadt": "Augsburg",
+    "email": "service@sw-augsburg.de",
+    "infobox": "<strong>Gut zu wissen für Augsburg:</strong> Die SWA kontrolliert in Straßenbahnen und Bussen regelmäßig, insbesondere auf stark frequentierten Linien wie der Linie 2. Bei vergessenen personalisierten Zeitkarten (z.B. Deutschlandticket) kann die Strafe durch nachträgliche Vorlage im Kundenzentrum oft auf eine Bearbeitungsgebühr reduziert werden."
+  },
+  {
+    "name": "Stadtwerke Münster (Stadtbus Münster)",
+    "slug": "stadtbus-muenster",
+    "stadt": "Münster",
+    "email": "info@stadtwerke-muenster.de",
+    "infobox": "<strong>Gut zu wissen für Münster:</strong> Münster ist stark von Fahrradfahrern geprägt, doch auch im Stadtbus finden Kontrollen statt. Das digitale Ticket muss vollständig aktiviert und sichtbar sein – ein Screenshot eines nicht aktivierten Tickets wird nicht anerkannt."
+  },
+  {
+    "name": "GVH (Großraum-Verkehr Hannover)",
+    "slug": "gvh-hannover-region",
+    "stadt": "Region Hannover",
+    "email": "info@gvh.de",
+    "infobox": "<strong>Gut zu wissen für die Region Hannover:</strong> Der GVH umfasst nicht nur die Stadt Hannover, sondern auch Umlandgemeinden. Wer mit einem reinen Stadtticket in Randgemeinden wie Langenhagen oder Garbsen fährt, benötigt eine höhere Preisstufe. Kontrolleure sind insbesondere auf S-Bahn-Linien in der Hauptverkehrszeit aktiv."
+  },
+  {
+    "name": "Verkehrsbetriebe Karlsruhe / AVG (Albtal-Verkehrs-Gesellschaft)",
+    "slug": "avg-karlsruhe-umland",
+    "stadt": "Karlsruhe & Umland (KVV)",
+    "email": "info@avg.info",
+    "infobox": "<strong>Gut zu wissen für AVG-Linien:</strong> Die AVG-Stadtbahnen verlassen Karlsruhe und fahren auf DB-Gleisen ins Umland (z.B. nach Pforzheim, Heilbronn oder Baden-Baden). Sobald die Bahn das Stadtgebiet verlässt, gelten DB-Tarife oder höhere KVV-Preisstufen – ein reines Stadtticket ist dann ungültig."
+  },
+  {
+    "name": "MVB (Magdeburger Verkehrsbetriebe)",
+    "slug": "mvb-magdeburg",
+    "stadt": "Magdeburg",
+    "email": "info@mvbnet.de",
+    "infobox": "<strong>Gut zu wissen für Magdeburg:</strong> Die MVB setzt in Straßenbahnen und Bussen auf Schwarzlicht-Stempelprüfung älterer Zeitkarten sowie digitale Kontrollgeräte für App-Tickets. Bei technischen Störungen der MVB-eigenen App empfiehlt sich ein Screenshot mit Zeitstempel als Nachweis."
+  },
+  {
+    "name": "Hallesche Verkehrs-AG (HAVAG)",
+    "slug": "havag-halle",
+    "stadt": "Halle (Saale)",
+    "email": "info@havag.com",
+    "infobox": "<strong>Gut zu wissen für Halle:</strong> Die HAVAG kontrolliert vor allem in den Hauptlinien der Innenstadt regelmäßig. Wer ein Papierticket kauft, muss es vor Fahrtantritt am Automaten entwerten – ungestempelte Tickets gelten als ungültig, auch wenn sie nachweislich gerade gekauft wurden."
+  },
+  {
+    "name": "Stadtwerke Erfurt / EVAG",
+    "slug": "evag-erfurt",
+    "stadt": "Erfurt",
+    "email": "info@stadtwerke-erfurt.de",
+    "infobox": "<strong>Gut zu wissen für Erfurt:</strong> In Erfurter Straßenbahnen befinden sich Entwerter an den Türen. Wer einsteigt, ohne zu entwerten, und beim Verlassen des Fahrzeugs kontrolliert wird, gilt als Schwarzfahrer – auch ein frisch gekauftes Ticket ohne Stempel wird nicht akzeptiert."
+  },
+  {
+    "name": "KSW / Stadtverkehr Kaiserslautern",
+    "slug": "ksw-kaiserslautern",
+    "stadt": "Kaiserslautern",
+    "email": "info@ksw-kl.de",
+    "infobox": "<strong>Gut zu wissen für Kaiserslautern:</strong> Im VRN-Verbund (Verkehrsverbund Rhein-Neckar) gelten eigene Zonentarife. Wer von Kaiserslautern Richtung Mannheim oder Ludwigshafen fährt, sollte die Zonenanzahl sorgfältig prüfen – Falschtickets werden konsequent geahndet."
+  },
+  {
+    "name": "RNV (Rhein-Neckar-Verkehr)",
+    "slug": "rnv-mannheim-heidelberg",
+    "stadt": "Mannheim, Heidelberg, Ludwigshafen",
+    "email": "info@rnv-online.de",
+    "infobox": "<strong>Gut zu wissen für Mannheim/Heidelberg:</strong> Die RNV bedient ein weitverzweigtes Straßenbahnnetz über drei Bundesländer (BW, RLP, HE). Tarifgrenzen verlaufen mitten durch das Netz – ein Ticket für Mannheim gilt nicht automatisch in Heidelberg. Kontrolleure arbeiten häufig in Zivil."
+  },
+  {
+    "name": "Stadtwerke Freiburg / VAG Freiburg",
+    "slug": "vag-freiburg",
+    "stadt": "Freiburg im Breisgau",
+    "email": "info@vag-freiburg.de",
+    "infobox": "<strong>Gut zu wissen für Freiburg:</strong> In Freiburg gilt das Entwerter-Prinzip: Tickets müssen unmittelbar beim Einsteigen gestempelt werden. Wer mit einem bereits entwerteten Ticket aus einer früheren Fahrt erneut einsteigt, riskiert ein EBE, da Datum und Uhrzeit geprüft werden."
+  },
+  {
+    "name": "Straßenbahn Rostock GmbH",
+    "slug": "rsag-rostock",
+    "stadt": "Rostock",
+    "email": "info@rsag-online.de",
+    "infobox": "<strong>Gut zu wissen für Rostock:</strong> Die RSAG kontrolliert in Straßenbahnen und Bussen, besonders auf touristisch frequentierten Linien (z.B. Richtung Warnemünde). Tageskarten müssen beim ersten Einsteigen entwertet werden – ein Tagesticket ohne Stempel zählt als ungültig."
+  },
+  {
+    "name": "Kieler Verkehrsgesellschaft (KVG)",
+    "slug": "kvg-kiel",
+    "stadt": "Kiel",
+    "email": "info@kvg-kiel.de",
+    "infobox": "<strong>Gut zu wissen für Kiel:</strong> In Kiel gilt das Einstiegsprinzip: Fahrgäste steigen vorne beim Fahrer ein und zeigen ihr Ticket vor. Wer hinten einsteigt oder kein gültiges Ticket vorweisen kann, riskiert sofort ein EBE von 60 €. Kontrollen finden zusätzlich durch zivile Teams statt."
+  },
+  {
+    "name": "BODO (Busverkehr Ostwestfalen-Lippe)",
+    "slug": "bodo-bielefeld",
+    "stadt": "Bielefeld & OWL-Region",
+    "email": "info@bodo.de",
+    "infobox": "<strong>Gut zu wissen für Bielefeld/OWL:</strong> Im BODO-Verbund decken Tickets je nach Preisstufe eine unterschiedliche Anzahl an Tarifwaben ab. Gerade auf Linien, die Stadtgrenzen überschreiten (z.B. Bielefeld–Gütersloh), wird die Tarifgültigkeit regelmäßig kontrolliert."
+  },
+  {
+    "name": "WSW Wuppertaler Stadtwerke",
+    "slug": "wsw-wuppertal",
+    "stadt": "Wuppertal",
+    "email": "kundenservice@wsw-online.de",
+    "infobox": "<strong>Gut zu wissen für Wuppertal:</strong> Die Schwebebahn ist eine Besonderheit – Tickets müssen vor dem Betreten des Bahnsteigs entwertet sein, da es keine Entwerter in den Fahrzeugen gibt. Kontrollen finden auch direkt auf den Bahnsteigen statt."
+  },
+  {
+    "name": "Stadtwerke Krefeld (SWK Mobil)",
+    "slug": "swk-krefeld",
+    "stadt": "Krefeld",
+    "email": "info@swk.de",
+    "infobox": "<strong>Gut zu wissen für Krefeld:</strong> Im VRR-Verbund gilt das Ticket auch für Verbindungen nach Duisburg oder Mönchengladbach – allerdings nur bei richtiger Preisstufe. SWK-Kontrolleure sind unauffällig gekleidet und häufig zu zweit unterwegs."
+  },
+  {
+    "name": "MVV (Mönchengladbacher Verkehrsgesellschaft)",
+    "slug": "mvg-moenchengladbach",
+    "stadt": "Mönchengladbach",
+    "email": "info@new-mg.de",
+    "infobox": "<strong>Gut zu wissen für Mönchengladbach:</strong> Die NEW mobility (ehemals MVG) kontrolliert vor allem auf stark ausgelasteten Linien zum Hauptbahnhof und in Richtung Rheydt. Bei Zeitkarteninhabern mit Deutschlandticket reicht die Vorlage des digitalen Tickets auf dem Smartphone – ein Ausdruck ist nicht notwendig."
+  },
+  {
+    "name": "Stadtwerke Oberhausen (STOAG)",
+    "slug": "stoag-oberhausen",
+    "stadt": "Oberhausen",
+    "email": "info@stoag.de",
+    "infobox": "<strong>Gut zu wissen für Oberhausen:</strong> Die STOAG ist im VRR-Netz eingebunden. Besonders bei Fahrten in Nachbarstädte wie Essen oder Duisburg sollten Fahrgäste die Wabengrenzen kennen. Kontrollen erfolgen häufig gemeinsam mit der Ruhrbahn an Übergangshaltestellen."
+  },
+  {
+    "name": "DVG (Duisburger Verkehrsgesellschaft)",
+    "slug": "dvg-duisburg",
+    "stadt": "Duisburg",
+    "email": "kundenservice@dvg-duisburg.de",
+    "infobox": "<strong>Gut zu wissen für Duisburg:</strong> Die DVG setzt verstärkt auf Kontrollen in U-Bahn-Linien, die ins Essener oder Düsseldorfer Netz übergehen. Da Duisburg im VRR liegt, können Falschzonierungen leicht passieren – ein Blick auf den Zonenplan vor Fahrtantritt schützt vor dem 60-€-EBE."
+  },
+  {
+    "name": "Bogestra / Herne",
+    "slug": "herne-bogestra",
+    "stadt": "Herne",
+    "email": "info@bogestra.de",
+    "infobox": "<strong>Gut zu wissen für Herne:</strong> Herne wird durch die BOGESTRA bedient. Da Herne zentral im Ruhrgebiet liegt, grenzt es an viele VRR-Städte. Kontrolleure prüfen besonders an Umsteigehaltestellen wie Herne Hauptbahnhof, ob Tickets für die jeweilige Preisstufe ausreichen."
+  },
+  {
+    "name": "BEG / BRB (Bayerische Regiobahn)",
+    "slug": "brb-bayerische-regiobahn",
+    "stadt": "Bayern (Regionalverkehr)",
+    "email": "info@bayerische-regiobahn.de",
+    "infobox": "<strong>Gut zu wissen bei der BRB:</strong> Im Regionalverkehr Bayerns gilt die EVO: Wer an einem Bahnhof ohne funktionierenden Automaten einsteigt, muss sich unaufgefordert beim Zugbegleiter melden und kann das Ticket kostenfrei im Zug lösen. Unterlässt man dies, droht das EBE von 60 €."
+  },
+  {
+    "name": "Stadtwerke Lübeck / Stadtverkehr Lübeck",
+    "slug": "svl-luebeck",
+    "stadt": "Lübeck",
+    "email": "info@stadtverkehr-luebeck.de",
+    "infobox": "<strong>Gut zu wissen für Lübeck:</strong> Im Stadtgebiet Lübeck kontrolliert der Stadtverkehr regelmäßig, insbesondere auf der Buslinie 5 (Hauptbahnhof–Travemünde). Wer nach Travemünde fährt, benötigt ein Ticket für mehr als eine Zone – Kontrollen am Zielort sind häufig."
+  },
+  {
+    "name": "Stadtwerke Osnabrück / VAMOS",
+    "slug": "vamos-osnabrueck",
+    "stadt": "Osnabrück",
+    "email": "info@stadtwerke-osnabrueck.de",
+    "infobox": "<strong>Gut zu wissen für Osnabrück:</strong> Im VOS-Verbund (Verkehrsgemeinschaft Osnabrück) gilt das Ticket auch für Umlandgemeinden, jedoch nur in der passenden Preisstufe. Busfahrer können in Osnabrück im Zweifelsfall um die Ausgabe eines Nachweises gebeten werden, wenn Automaten defekt sind."
+  },
+  {
+    "name": "Kasseler Verkehrsgesellschaft (KVG Kassel)",
+    "slug": "kvg-kassel",
+    "stadt": "Kassel",
+    "email": "info@kvg-kassel.de",
+    "infobox": "<strong>Gut zu wissen für Kassel:</strong> In Kassel wird vor allem auf den RegioTram-Linien kontrolliert, die weit ins Umland fahren (z.B. nach Korbach oder Bad Wildungen). Ein Stadtticket gilt dort nicht – wer die Tarifzone verlässt, braucht zwingend ein erweitertes Ticket."
+  },
+  {
+    "name": "Stadtwerke Mainz / MVG Mainz",
+    "slug": "mvg-mainz",
+    "stadt": "Mainz",
+    "email": "kundenservice@mvg-mainz.de",
+    "infobox": "<strong>Gut zu wissen für Mainz:</strong> Mainz liegt im RMV-Verbund (Rhein-Main-Verkehrsverbund). Fahrten über die Stadtgrenze nach Wiesbaden oder Ingelheim erfordern ein entsprechend erweitertes Ticket. Kontrollen in der Straßenbahn erfolgen oft durch Teams, die an Endstationen einsteigen."
+  },
+  {
+    "name": "HEAG mobilo (Darmstadt)",
+    "slug": "heag-darmstadt",
+    "stadt": "Darmstadt",
+    "email": "info@heag-mobilo.de",
+    "infobox": "<strong>Gut zu wissen für Darmstadt:</strong> Die HEAG mobilo setzt auf Kontrollen in Straßenbahnen der Linien 2 und 9 (Richtung Griesheim / Alsbach), wo Tarifgrenzen schnell überschritten werden. Wer ein Semesterticket der TU/HDA besitzt, sollte dieses immer mit dem Studierendenausweis mitführen."
+  },
+  {
+    "name": "üstra / RegioBus Hannover",
+    "slug": "regiobus-hannover",
+    "stadt": "Region Hannover (Umland)",
+    "email": "info@regiobus.de",
+    "infobox": "<strong>Gut zu wissen für RegioBus-Linien:</strong> RegioBus-Linien fahren weit in den Landkreis Hannover hinein (z.B. nach Celle, Hildesheim oder Nienburg). Ein GVH-Stadtticket für Hannover gilt hier nicht. Kontrollen sind seltener als in der City, kommen aber vor – besonders auf beliebten Ausflugsstrecken."
+  },
+  {
+    "name": "VIAS (Hessische Landesbahn)",
+    "slug": "vias-hessen",
+    "stadt": "Hessen (Regionalverkehr)",
+    "email": "info@vias-rail.de",
+    "infobox": "<strong>Gut zu wissen bei VIAS:</strong> VIAS betreibt Regionalbahnlinien im RMV-Verbund (z.B. Odenwaldbahn, Taunusbahn). Wer mit einem Stadtticket aus Frankfurt in diese Bahnen einsteigt, fährt in der Regel ohne gültigen Fahrschein. Das Zugpersonal prüft Tickets konsequent."
+  },
+  {
+    "name": "agilis (Bayerischer Regionalverkehr)",
+    "slug": "agilis-bayern",
+    "stadt": "Bayern (Regionalverkehr)",
+    "email": "info@agilis.de",
+    "infobox": "<strong>Gut zu wissen bei agilis:</strong> agilis betreibt Strecken in Ostbayern (z.B. Regensburg–Passau, Nürnberg–Bayreuth). Wer einen MVV- oder VGN-Verbundfahrschein hat, muss prüfen, ob dieser auf der jeweiligen agilis-Linie gilt – oft gilt er nur bis zur Verbundgrenze."
+  },
+  {
+    "name": "Stadtwerke Würzburg / WVV",
+    "slug": "wvv-wuerzburg",
+    "stadt": "Würzburg",
+    "email": "info@wvv.de",
+    "infobox": "<strong>Gut zu wissen für Würzburg:</strong> Im WVV-Stadtgebiet Würzburg wird in Straßenbahnen und Bussen kontrolliert. Besonders auf der Linie 1 (Sanderring–Grombühl) und auf Buslinien Richtung Umland sind Kontrollen häufig. Nicht entwertete Tickets werden konsequent als ungültig gewertet."
+  },
+  {
+    "name": "Stadtwerke Kiel / KVG",
+    "slug": "kvg-kiel-stadtwerke",
+    "stadt": "Kiel (Stadtbusse)",
+    "email": "kundencenter@kvg-kiel.de",
+    "infobox": "<strong>Gut zu wissen für Kiel (Stadtbus):</strong> In Kiel steigen Fahrgäste grundsätzlich vorne beim Fahrer ein und müssen ihr Ticket vorzeigen. Hintere Türen dürfen nur zum Aussteigen genutzt werden. Wer hinten einsteigt, riskiert beim erstbesten Kontrolleur ein EBE."
+  },
+  {
+    "name": "Stadtbahn Bielefeld (moBiel)",
+    "slug": "mobiel-bielefeld",
+    "stadt": "Bielefeld",
+    "email": "info@mobiel.de",
+    "infobox": "<strong>Gut zu wissen für Bielefeld:</strong> Die moBiel-Stadtbahnen sind ein Schnellstraßenbahn-System im Tunnelbereich der Innenstadt. Vor dem Betreten des Bahnsteigs im Tunnel müssen Tickets bereits entwertet sein. Zivile Kontrolleure patrouillieren regelmäßig, besonders zur Stoßzeit."
+  },
+  {
+    "name": "Stadtwerke Halle / HAVAG (Umland)",
+    "slug": "havag-saale-region",
+    "stadt": "Saalekreis & Halle-Umland",
+    "email": "info@nahverkehr-saalekreis.de",
+    "infobox": "<strong>Gut zu wissen im Saalekreis:</strong> Wer mit Linien aus Halle in den Saalekreis fährt (z.B. nach Merseburg oder Landsberg), benötigt ein Verbundticket des Mitteldeutschen Verkehrsverbunds (MDV). Reine Stadttickets von HAVAG gelten nur im Halleschen Stadtgebiet."
+  },
+  {
+    "name": "SWT (Stadtwerke Trier)",
+    "slug": "swt-trier",
+    "stadt": "Trier",
+    "email": "info@swt.de",
+    "infobox": "<strong>Gut zu wissen für Trier:</strong> Das Trierische Busnetz ist überschaubar, wird aber regelmäßig kontrolliert. Wer in Grenznähe zu Luxemburg unterwegs ist, sollte beachten, dass luxemburgische Tickets in deutschen Bussen nicht gelten – und umgekehrt."
+  },
+  {
+    "name": "Stadtwerke Göttingen / GöVB",
+    "slug": "goevb-goettingen",
+    "stadt": "Göttingen",
+    "email": "info@stadtwerke-goettingen.de",
+    "infobox": "<strong>Gut zu wissen für Göttingen:</strong> Im GVG-Verbund (Göttinger Verkehrsbetriebe) werden Busse kontrolliert, besonders auf der Linie 21 (Hauptbahnhof–Universität). Studierende sollten ihr Semesterticket der Uni Göttingen stets dabei haben – ohne Ausweis ist es nicht gültig."
+  },
+  {
+    "name": "VHH (Verkehrsbetriebe Hamburg-Holstein)",
+    "slug": "vhh-hamburg-umland",
+    "stadt": "Hamburg-Umland (Schleswig-Holstein/Niedersachsen)",
+    "email": "info@vhh.de",
+    "infobox": "<strong>Gut zu wissen bei der VHH:</strong> Die VHH bedient das südliche und östliche Hamburger Umland mit Bussen. Wer aus Hamburg-Bergedorf oder Harburg in angrenzende Landkreise fährt, braucht ein Ticket, das die entsprechenden Ringe im HVV abdeckt. Auch hier gilt: Digitalticket muss vollständig geladen sein."
+  },
+  {
+    "name": "NVV (Nordhessischer Verkehrsverbund)",
+    "slug": "nvv-nordhessen",
+    "stadt": "Nordhessen (Kassel-Region)",
+    "email": "info@nvv.de",
+    "infobox": "<strong>Gut zu wissen im NVV:</strong> Der NVV deckt ein großes Gebiet in Nordhessen ab. Wer auf NVV-Linien unterwegs ist, die auch von der Deutschen Bahn betrieben werden, muss auf die Tarifgültigkeit achten: NVV-Tickets gelten nicht in allen DB-Fernzügen, die durch das Gebiet fahren."
+  },
+  {
+    "name": "Ihrem Verkehrsbetrieb",
+    "slug": "allgemein",
+    "stadt": "Ihrer Stadt",
+    "email": "max@muster.de",
+    "infobox": "<strong>Gut zu wissen bei Ihrem Verkehrsbetrieb:</strong> Das Verkehrsnetz umfasst ein weitläufiges Gebiet. Wer verschiedene Anbieter oder Verbindungen nutzt, sollte auf die jeweilige Ticketgültigkeit achten: Nicht jedes Ticket wird automatisch in allen Zügen oder auf allen Strecken anerkannt."
+  },
+  {
+    "name": "metronom Eisenbahngesellschaft",
+    "slug": "metronom",
+    "stadt": "Niedersachsen & Hamburg (Regionalverkehr)",
+    "email": "info@der-metronom.de",
+    "infobox": "<strong>Gut zu wissen beim metronom:</strong> Der metronom betreibt Regionalbahnlinien in Niedersachsen und Hamburg (z.B. Hamburg–Uelzen, Hamburg–Göttingen, Hamburg–Cuxhaven). Tickets werden von Zugbegleitern konsequent kontrolliert – der metronom ist kein Verbundunternehmen im klassischen Sinne, weshalb nicht alle HVV- oder GVH-Tickets auf allen Linien gültig sind. Wer an einem Bahnhof ohne funktionierenden Automaten einsteigt, muss sich laut Eisenbahn-Verkehrsordnung (EVO) sofort und unaufgefordert beim Zugbegleiter melden – das Ticket kann dann ohne Aufpreis im Zug gelöst werden. Unterlässt man dies und wird erst bei der Kontrolle auffällig, droht das EBE von 60 €. Besonders auf der Strecke Hamburg–Hannover sind Kontrollen lückenlos."
+  }
+]

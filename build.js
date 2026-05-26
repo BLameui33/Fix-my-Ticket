@@ -30,6 +30,7 @@ function generateCrossLinks(allItems, currentItem, urlGenerator, nameGenerator, 
 const parkfirmen = JSON.parse(fs.readFileSync(path.join(__dirname, 'parkfirmen.json'), 'utf8'));
 const supermaerkte = JSON.parse(fs.readFileSync(path.join(__dirname, 'supermaerkte.json'), 'utf8'));
 const staedte = JSON.parse(fs.readFileSync(path.join(__dirname, 'staedte.json'), 'utf8'));
+const verkehrsbetriebe = JSON.parse(fs.readFileSync(path.join(__dirname, 'verkehrsbetriebe.json'), 'utf8'));
 
 const masterTpl = loadTemplate('parkplatz-master.html');
 const ordnungsamtTpl = loadTemplate('ordnungsamt-master.html');
@@ -38,6 +39,7 @@ const abstandTpl = loadTemplate('abstand-master.html');
 const ampelTpl = loadTemplate('ampel-master.html');
 const lkwTpl = loadTemplate('lkw-master.html');
 const handyTpl = loadTemplate('handy-master.html');
+const ebeTpl = loadTemplate('ebe-master.html');
 
 // 2. ALLE Sammel-Variablen sauber am Anfang deklarieren (Verhindert ReferenceErrors!)
 let optFirmen = "", linkFirmen = "";
@@ -49,6 +51,7 @@ let optAbstand = "", linkAbstand = "";
 let optAmpel = "", linkAmpel = "";
 let optLkw = "", linkLkw = "";
 let optHandy = "", linkHandy = "";
+let optEbe = "", linkEbe = "";
 
 // =====================================================================
 // SILO 1: PARKFIRMEN (Juristische Suche)
@@ -279,6 +282,31 @@ staedte.forEach(c => {
 });
 
 // =====================================================================
+// SILO 10: ÖPNV / ERHÖHTES BEFÖRDERUNGSENTGELT (60€ Strafe)
+// =====================================================================
+verkehrsbetriebe.forEach(v => {
+    let fName = `einspruch-60-euro-${v.slug}.html`;
+    // Crosslinks nur zu anderen Verkehrsbetrieben generieren
+    let crossLinks = generateCrossLinks(verkehrsbetriebe, v, item => `einspruch-60-euro-${item.slug}.html`, item => item.name);
+    
+    let infoboxText = v.infobox || "";
+
+    let content = ebeTpl
+        .replace(/\{\{VERKEHRSBETRIEB_NAME\}\}/g, v.name)
+        .replace(/\{\{VERKEHRSBETRIEB_EMAIL\}\}/g, v.email)
+        .replace(/\{\{STADT_NAME\}\}/g, v.stadt)
+        .replace(/\{\{DATEINAME\}\}/g, fName)
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText);
+
+    fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
+    
+    // Für einen zukünftigen Hub-aufbau speichern
+    optEbe += `<option value="${fName}">${v.name}</option>\n`;
+    linkEbe += `<a href="${fName}">60€ Strafe ${v.name} (${v.stadt})</a>\n`;
+});
+
+// =====================================================================
 // HUB-SEITE 1 GENERIEREN (Parkplatz)
 // =====================================================================
 if (fs.existsSync(path.join(__dirname, 'hub-parkplatz-master.html'))) {
@@ -330,6 +358,20 @@ if (fs.existsSync(path.join(__dirname, 'hub-lkw-master.html'))) {
     console.log('✅ Hub-Seite für LKW & Berufskraftfahrer erfolgreich generiert.');
 } else {
     console.warn("⚠️ hub-lkw-master.html fehlt noch, LKW-Hub wurde übersprungen.");
+}
+
+// =====================================================================
+// HUB-SEITE 4 GENERIEREN (ÖPNV / Bahn / 60 Euro)
+// =====================================================================
+if (fs.existsSync(path.join(__dirname, 'hub-bahn-master.html'))) {
+    let hubBahnContent = loadTemplate('hub-bahn-master.html')
+        .replace(/\{\{OPT_EBE\}\}/g, optEbe)       
+        .replace(/\{\{LINK_EBE\}\}/g, linkEbe);    
+        
+    fs.writeFileSync(path.join(outputDir, 'bahn-bussgeld-info.html'), hubBahnContent, 'utf8');
+    console.log('✅ Hub-Seite für Bahn & ÖPNV erfolgreich generiert.');
+} else {
+    console.warn("⚠️ hub-bahn-master.html fehlt noch, Bahn-Hub wurde übersprungen (kann später hinzugefügt werden).");
 }
 
 console.log('\n🎉 Fertig! Der Build lief ohne Fehler durch.');
