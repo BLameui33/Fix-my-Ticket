@@ -4,7 +4,7 @@ const path = require('path');
 // ==========================================
 // KONFIGURATION: Setze hier deine echte Domain ein
 // ==========================================
-const BASE_URL = 'https://www.fix-my-ticket.de/'; 
+const BASE_URL = 'https://fix-my-ticket.de/'; 
 
 const docsDir = path.join(__dirname, 'docs');
 const sitemapPath = path.join(docsDir, 'sitemap.xml');
