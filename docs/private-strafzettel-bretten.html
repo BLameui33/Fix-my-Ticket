@@ -146,6 +146,8 @@
         <option value="agb">Ansatz 3: AGB / Schilder waren nicht rechtzeitig sichtbar (zu klein, unbeleuchtet, zugewachsen)</option>
         <option value="freitext">Ansatz 4: Individuelle Begründung (Freitext eingeben)</option>
         <option value="allgemein">Ansatz 5: Allgemeiner Widerspruch (Forderung unberechtigt)</option>
+        <option value="wenden">Ansatz 6: Kein Parkvorgang (Nur gewendet / durchgefahren / Stau)</option>
+        <option value="technik">Ansatz 7: Fehlerhafte Zeiterfassung / Manipulierte Nachweise</option>
       </select>
 
       <!-- Dynamisches Zusatzfeld für Freitext -->
@@ -155,6 +157,14 @@
       </div>
     </fieldset>
 
+    <div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 6px; margin: 20px 0; display: flex; gap: 15px; align-items: center;">
+    <div style="font-size: 2em;">💡</div>
+    <div>
+        <strong style="color: #2e7d32; display: block; margin-bottom: 5px;">Tipp: Probieren Sie verschiedene Ansätze aus!</strong>
+        <p style="margin: 0; font-size: 0.9em; color: #333;">Sie sind sich unsicher, welcher juristische Hebel in Ihrer Situation am besten greift? Kein Problem! Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen (z. B. DSGVO und Technik-Fehler). Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.</p>
+    </div>
+</div>
+
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1;">📄 PDF generieren (Post)</button>
       <button type="button" id="btnEmail" class="button-secondary" style="flex: 1; background: #333; color: white; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px;">✉️ Direkt per E-Mail senden / Text kopieren</button>
@@ -163,6 +173,11 @@
         Die folgenden Einspruchsgründe sind typische Standardargumente, die Betroffene in vergleichbaren Fällen häufig verwenden. Welcher Ansatz auf Ihren Fall zutrifft, müssen Sie selbst beurteilen – wir empfehlen keinen konkreten Rechtsweg.
     </p>
   </form>
+
+  <div class="legal-info-box" style="border-left: 4px solid #d32f2f; margin-top: 25px;">
+    <h4 style="margin-top: 0; color: #d32f2f;">Gut zu wissen: Ruhe bewahren bei Mahnungen</h4>
+    <p style="margin-bottom: 0;"><strong>Verbraucherzentralen weisen häufig darauf hin</strong>, dass private Parkraumbewirtschafter stark auf automatisierte Mahnprozesse setzen. Es ist nicht ungewöhnlich, dass auf einen Widerspruch zunächst standardisierte Ablehnungen oder Schreiben von Inkassobüros folgen. Wichtig hierbei: Sobald Sie einer Forderung begründet widersprochen haben, darf diese laut Gesetz nicht an Auskunfteien (wie die Schufa) gemeldet werden. Ob ein Betreiber bei einer strittigen Beweislage tatsächlich das wirtschaftliche Risiko eines Gerichtsverfahrens eingeht, muss im Einzelfall bewertet werden – in der Praxis scheuen viele Anbieter diesen Schritt jedoch, wenn sie erkennen, dass Sie Ihre Rechte kennen.</p>
+</div>
 
   <div class="seo-content">
     <h2>Private Strafzettel: Warum Sie der Parkfirma nicht blind bezahlen sollten</h2>
@@ -182,12 +197,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Parkfirmen & Städte:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="private-strafzettel-halver.html">Halver</a>
-<a href="private-strafzettel-wolfsburg.html">Wolfsburg</a>
-<a href="private-strafzettel-ansbach.html">Ansbach</a>
-<a href="private-strafzettel-hattersheim.html">Hattersheim am Main</a>
-<a href="private-strafzettel-hof.html">Hof</a>
-<a href="private-strafzettel-velbert.html">Velbert</a>
+      <a href="private-strafzettel-dormagen.html">Dormagen</a>
+<a href="private-strafzettel-schwerin.html">Schwerin</a>
+<a href="private-strafzettel-nettetal.html">Nettetal</a>
+<a href="private-strafzettel-guben.html">Guben</a>
+<a href="private-strafzettel-tauberbischofsheim.html">Tauberbischofsheim</a>
+<a href="private-strafzettel-waren-mueritz.html">Waren (Müritz)</a>
 
     </div>
   </div>
@@ -301,13 +316,20 @@ function getWiderspruchText(strategie, kennzeichen, ort, datum, freitext) {
     text += `Begründung:\nDie automatisierte Kennzeichenerfassung auf dem Gelände erfolgte rechtswidrig, da Ihre Informationspflichten gem. Art. 13 DSGVO nicht rechtzeitig vor dem physischen Erfassungsvorgang erfüllt wurden (Schilder zu spät / verdeckt angebracht). Dies stellt einen gravierenden Datenschutzverstoß dar. Ich mache hiermit zudem meinen Auskunftsanspruch nach Art. 15 DSGVO geltend und fordere Sie auf, den rechtswidrig erlangten Datensatz unverzüglich zu löschen. Ein rechtmäßiger Vertragsabschluss scheidet unter diesen Bedingungen ohnehin aus.`;
   } else if (strategie === "agb") {
     text += `Begründung:\nDie rechtlich bindende Einbeziehung Ihrer Allgemeinen Geschäftsbedingungen (AGB) in den vermeintlichen Vertrag wird hiermit ausdrücklich bestritten. Gemäß § 305 Abs. 2 BGB müssen diese bei Vertragsschluss für einen durchschnittlichen Fahrer deutlich sichtbar sein. Am fraglichen Tatort war die Beschilderung derart unzureichend (z.B. unbeleuchtet, zugewachsen oder viel zu kleine Schrift), dass diese nicht wahrgenommen werden konnte. Die geforderte Vertragsstrafe ist somit hinfällig und erfüllt zudem den Tatbestand einer überraschenden Klausel gem. § 305c BGB.`;
+  } else if (strategie === "wenden") {
+    text += `Begründung:\nEin wirksamer Vertragsschluss setzt eine übereinstimmende Willenserklärung sowie einen tatsächlichen Parkvorgang voraus. Mein Fahrzeug wurde auf dem genannten Gelände zu keinem Zeitpunkt abgestellt (geparkt), sondern lediglich zum Wenden bzw. zur kurzzeitigen Durchfahrt genutzt. Die bloße Teilnahme am Verkehr auf dem Gelände stellt keinen Annahmeakt Ihrer Allgemeinen Geschäftsbedingungen dar. Eine Vertragsstrafe entbehrt hiermit jeglicher rechtlichen und tatsächlichen Grundlage.`;
+  } else if (strategie === "technik") {
+    text += `Begründung:\nIch bestreite die von Ihnen behauptete Parkdauer und die Korrektheit Ihrer technischen Aufzeichnungssysteme ausdrücklich. Insbesondere weise ich den Verdacht zurück, dass zwischenzeitliche Ausfahrten nicht ordnungsgemäß erfasst wurden (z. B. bei mehrfacher Nutzung des Geländes am selben Tag). Ich fordere Sie hiermit auf, mir die ungeschnittenen, vollständigen Bildnachweise inklusive manipulationssicherer und geeichter Zeitstempel meiner Ein- UND Ausfahrt zur juristischen Prüfung vorzulegen. Bis zur Erbringung dieses zweifelsfreien Beweises ist Ihre Forderung unbegründet.`;
   } else if (strategie === "freitext") {
     text += `Begründung:\n${freitext}`;
   } else {
     text += `Begründung:\nDie von Ihnen behauptete Forderung entbehrt jedweder rechtlichen und sachlichen Grundlage. Ein rechtsgültiger Vertragsschluss lag nicht vor. Ich bestreite die Berechtigung Ihrer Vertragsstrafe in vollem Umfang.`;
   }
 
-  text += `\n\nIch setze Ihnen zur schriftlichen Bestätigung der Stornierung dieser Forderung eine Frist von 14 Tagen. Sollten Sie die Forderung weiterhin aufrechterhalten oder ungerechtfertigt an ein Inkassounternehmen abtreten, behalte ich mir zivilrechtliche Schritte (u. a. negative Feststellungsklage) sowie eine Beschwerde beim zuständigen Landesdatenschutzbeauftragten ausdrücklich vor.`;
+  text += `\n\nDa die Forderung hiermit vollumfänglich und begründet bestritten wird, weise ich Sie ausdrücklich darauf hin, dass eine Weitergabe der Daten an ein Inkassounternehmen oder die Einmeldung bei Auskunfteien (wie z. B. der SCHUFA) datenschutz- und zivilrechtlich unzulässig ist. `;
+  text += `Sollten Sie diese unberechtigte Forderung wider besseres Wissen aufrechterhalten oder versuchen, mich durch automatisierte Mahnschreiben unter Druck zu setzen, behalte ich mir rechtliche Schritte – insbesondere die Erhebung einer negativen Feststellungsklage durch einen Rechtsanwalt – ausdrücklich vor. `;
+  text += `Zudem werde ich in diesem Fall eine formelle Beschwerde beim zuständigen Landesdatenschutzbeauftragten wegen des begründeten Verdachts auf Datenschutzverstöße einreichen sowie den Vorgang der Verbraucherzentrale zur Prüfung systematisch unlauterer Geschäftspraktiken übergeben.\n\n`;
+  text += `Ich setze Ihnen zur schriftlichen und rechtsverbindlichen Bestätigung der Stornierung dieser Forderung eine Ausschlussfrist von 14 Tagen ab Datum dieses Schreibens.`;
   
   return text;
 }
