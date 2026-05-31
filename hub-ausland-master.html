@@ -80,23 +80,23 @@
   
   <p>Die gute Nachricht: Gemäß dem EU-Rahmenbeschluss zur gegenseitigen Anerkennung von Geldsanktionen sowie dem deutschen Gesetz über die internationale Rechtshilfe in Strafsachen (IRG) ist längst nicht jedes europäische Knöllchen in Deutschland vollstreckbar. Das deutsche <strong>Bundesamt für Justiz (BfJ)</strong>, welches als einzige Behörde Amtshilfe leisten darf, prüft die Bescheide sehr streng. So scheitern viele Forderungen an der Sprachbarriere, an Bagatellgrenzen oder an dem Verbot der Halterhaftung in Deutschland.</p>
 
-  <div class="legal-info-box" style="border-left-color: #ff9800; background: #fffdf7; padding: 15px; border-left-width: 5px; border-left-style: solid; margin: 20px 0; border-radius: 4px;">
+  <div class="legal-info-box" style="border-left-color: #b72d2d; background: #fffdf7; padding: 15px; border-left-width: 5px; border-left-style: solid; margin: 20px 0; border-radius: 4px;">
     <strong>Wichtige Unterscheidung (Vollstreckung vs. Wiedereinreise):</strong><br>
     Wenn Sie ein Ticket erfolgreich abwehren, darf das BfJ nicht in Deutschland bei Ihnen pfänden. Die Strafe im Ursprungsland bleibt jedoch oft rechtskräftig. Das bedeutet: Bei einer erneuten Einreise in dieses Land können Sie bei einer Verkehrskontrolle oder am Flughafen zur Kasse gebeten werden, sofern die Verjährungsfrist des jeweiligen Landes noch nicht abgelaufen ist.
   </div>
 
-  <div class="router-box" style="background: #fff; border: 2px solid #ff9800; border-radius: 8px; padding: 25px; margin: 40px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+  <div class="router-box" style="background: #fff; border: 2px solid #b72d2d; border-radius: 8px; padding: 25px; margin: 40px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
     <h2 style="margin-top: 0; color: #333;">EU-Einspruchs-Assistent starten:</h2>
     <p style="margin-bottom: 20px; color: #666;">Wählen Sie das Urlaubsland aus, aus dem die Behörde oder das Inkassobüro schreibt, um einen formell korrekten Widerspruch nach EU-Recht zu generieren:</p>
 
     <div style="margin-bottom: 20px;">
-      <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #d32f2f;">🌍 Nach Reiseland auswählen:</label>
+      <label style="font-weight: bold; display: block; margin-bottom: 5px; color: #b72d2d;">🌍 Nach Reiseland auswählen:</label>
       <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-        <select id="routeAusland" style="flex: 1; min-width: 250px; padding: 10px; border: 2px solid #ff9800; border-radius: 4px; font-size: 1.05em;">
+        <select id="routeAusland" style="flex: 1; min-width: 250px; padding: 10px; border: 2px solid #b72d2d; border-radius: 4px; font-size: 1.05em;">
           <option value="">-- Land auswählen --</option>
           {{OPT_AUSLAND}}
         </select>
-        <button onclick="routeTo('routeAusland')" class="button-primary" style="padding: 10px 20px; background: #ff9800; color: #fff; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; text-shadow: 0 1px 1px rgba(0,0,0,0.2);">Einspruch starten</button>
+        <button onclick="routeTo('routeAusland')" class="button-primary" style="padding: 10px 20px; background: #b72d2d; color: #fff; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; text-shadow: 0 1px 1px rgba(0,0,0,0.2);">Einspruch starten</button>
       </div>
     </div>
   </div>
@@ -110,35 +110,35 @@
   <div class="interactive-checklist-container" style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 35px;">
     
     <!-- KÄSTCHEN 1 -->
-    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #ff9800; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
-      <input type="checkbox" id="check-bagatell" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #ff9800;">
+    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #b72d2d; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
+      <input type="checkbox" id="check-bagatell" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #b72d2d;">
       <label for="check-bagatell" style="cursor: pointer; line-height: 1.6; color: #333;">
-        <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #e65100;">💶 Unterschreitung der Bagatellgrenze (Unter 70 Euro)</strong>
+        <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #b72d2d;">💶 Unterschreitung der Bagatellgrenze (Unter 70 Euro)</strong>
         Die EU-weite Vollstreckungshilfe durch das deutsche Bundesamt für Justiz (BfJ) greift erst ab einer Bagatellgrenze von <strong>70 Euro</strong> (inklusive aller Verfahrensgebühren). Liegt die Gesamtforderung darunter, wird das Verfahren in Deutschland nicht weiter verfolgt. <em>Ausnahme Österreich:</em> Hier liegt die Grenze durch ein Sonderabkommen bereits bei 25 Euro.
       </label>
     </div>
 
     <!-- KÄSTCHEN 2 -->
-    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #ff9800; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
-      <input type="checkbox" id="check-sprache" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #ff9800;">
+    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #b72d2d; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
+      <input type="checkbox" id="check-sprache" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #b72d2d;">
       <label for="check-sprache" style="cursor: pointer; line-height: 1.6; color: #333;">
-        <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #e65100;">🗣️ Verstoß gegen die Landessprache (Mangelhafte Übersetzung)</strong>
+        <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #b72d2d;">🗣️ Verstoß gegen die Landessprache (Mangelhafte Übersetzung)</strong>
         Nach den EU-Vorgaben (CBE-Richtlinie) muss der erste offizielle Bußgeldbescheid zwingend in einer Sprache abgefasst sein, die Sie verstehen – im Regelfall also auf <strong>Deutsch</strong>. Haben Sie einen rein italienischen, französischen oder kroatischen Brief erhalten, ist das Verfahren formal fehlerhaft.
       </label>
     </div>
 
     <!-- KÄSTCHEN 3 -->
-    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #ff9800; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
-      <input type="checkbox" id="check-halter" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #ff9800;">
+    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #b72d2d; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
+      <input type="checkbox" id="check-halter" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #b72d2d;">
       <label for="check-halter" style="cursor: pointer; line-height: 1.6; color: #333;">
-        <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #e65100;">👤 Reine Halterhaftung statt Fahrerhaftung (Ordre Public)</strong>
+        <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #b72d2d;">👤 Reine Halterhaftung statt Fahrerhaftung (Ordre Public)</strong>
         Waren Sie am besagten Tag nachweislich nicht der Fahrer des Fahrzeugs (z. B. weil Familie/Freunde gefahren sind)? Viele EU-Staaten bestrafen pauschal den Fahrzeughalter. Das deutsche Grundgesetz verbietet dies. Wenn Sie dem BfJ gegenüber erklären, dass Sie nicht gefahren sind, wird die Vollstreckung wegen Verstoßes gegen den deutschen <em>Ordre Public</em> (§ 77 IRG) abgelehnt.
       </label>
     </div>
 
     <!-- KÄSTCHEN 4 -->
-    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #ff9800; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
-      <input type="checkbox" id="check-inkasso" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #ff9800;">
+    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #b72d2d; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
+      <input type="checkbox" id="check-inkasso" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #b72d2d;">
       <label for="check-inkasso" style="cursor: pointer; line-height: 1.6; color: #333;">
         <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #e65100;">🛑 Absender ist ein privates Inkassobüro (EPC, Nivi, Notare)</strong>
         Der Drohbrief kommt nicht von einer ausländischen Behörde, sondern von einer privaten Firma wie <em>Euro Parking Collection plc</em>, <em>Nivi SpA</em> oder einer kroatischen Anwaltskanzlei? Private Firmen besitzen in Deutschland **keinerlei hoheitliche Rechte** zur Zwangsvollstreckung öffentlich-rechtlicher Bußgelder. Ein formeller Widerspruch reicht meist aus, um das Verfahren zu stoppen.
@@ -146,8 +146,8 @@
     </div>
 
     <!-- KÄSTCHEN 5 -->
-    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #ff9800; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
-      <input type="checkbox" id="check-frist" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #ff9800;">
+    <div style="background: #fff; border: 1px solid #eaeaea; border-left: 5px solid #b72d2d; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); display: flex; gap: 15px; align-items: flex-start;">
+      <input type="checkbox" id="check-frist" style="transform: scale(1.4); margin-top: 4px; cursor: pointer; accent-color: #b72d2d;">
       <label for="check-frist" style="cursor: pointer; line-height: 1.6; color: #333;">
         <strong style="font-size: 1.1em; display: block; margin-bottom: 3px; color: #e65100;">📅 Nationale Verjährungsfristen überschritten</strong>
         Liegt der Vorfall bereits extrem lange zurück? In Italien beispielsweise müssen ausländische Halter innerhalb von <strong>360 Tagen nach der offiziellen Halterermittlung</strong> benachrichtigt werden. Geht der Brief erst nach 14 Monaten bei Ihnen ein, ist der Anspruch nach italienischem Recht (Codice della Strada) verjährt.
@@ -157,7 +157,7 @@
   </div>
 
   <!-- DISPLAY BANNER -->
-  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ff9800; padding: 15px 20px; margin: 40px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative; overflow-wrap: break-word;">
+  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #b72d2d; padding: 15px 20px; margin: 40px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative; overflow-wrap: break-word;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
     <div style="font-size: 2em; line-height: 1;">⚖️</div>
     <div>
@@ -222,7 +222,7 @@
       
       <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
         <div style="flex: 1; min-width: 250px;">
-          <h3 style="color: #ff9800; font-size: 1.1em;">Einspruch nach Land</h3>
+          <h3 style="color: #b72d2d; font-size: 1.1em;">Einspruch nach Land</h3>
           <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.95em; word-break: break-all;">
             {{LINK_AUSLAND}}
           </div>
