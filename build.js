@@ -31,6 +31,8 @@ const parkfirmen = JSON.parse(fs.readFileSync(path.join(__dirname, 'parkfirmen.j
 const supermaerkte = JSON.parse(fs.readFileSync(path.join(__dirname, 'supermaerkte.json'), 'utf8'));
 const staedte = JSON.parse(fs.readFileSync(path.join(__dirname, 'staedte.json'), 'utf8'));
 const verkehrsbetriebe = JSON.parse(fs.readFileSync(path.join(__dirname, 'verkehrsbetriebe.json'), 'utf8'));
+const laender = JSON.parse(fs.readFileSync(path.join(__dirname, 'laender.json'), 'utf8'));
+const mautbetreiber = JSON.parse(fs.readFileSync(path.join(__dirname, 'mautbetreiber.json'), 'utf8'));
 
 const masterTpl = loadTemplate('parkplatz-master.html');
 const ordnungsamtTpl = loadTemplate('ordnungsamt-master.html');
@@ -40,6 +42,10 @@ const ampelTpl = loadTemplate('ampel-master.html');
 const lkwTpl = loadTemplate('lkw-master.html');
 const handyTpl = loadTemplate('handy-master.html');
 const ebeTpl = loadTemplate('ebe-master.html');
+const auslandTpl = loadTemplate('ausland-master.html');
+const abschleppTpl = loadTemplate('abschleppen-master.html');
+const mautTpl = loadTemplate('maut-master.html');
+
 
 // 2. ALLE Sammel-Variablen sauber am Anfang deklarieren (Verhindert ReferenceErrors!)
 let optFirmen = "", linkFirmen = "";
@@ -52,6 +58,9 @@ let optAmpel = "", linkAmpel = "";
 let optLkw = "", linkLkw = "";
 let optHandy = "", linkHandy = "";
 let optEbe = "", linkEbe = "";
+let optAusland = "", linkAusland = "";
+let optAbschleppen = "", linkAbschleppen = "";
+let optMaut = "", linkMaut = "";
 
 // =====================================================================
 // SILO 1: PARKFIRMEN (Juristische Suche)
@@ -307,6 +316,76 @@ verkehrsbetriebe.forEach(v => {
 });
 
 // =====================================================================
+// SILO 11: AUSLANDS-BUSSGELDER & INKASSO (Holiday Tickets)
+// =====================================================================
+laender.forEach(l => {
+    let fName = `einspruch-ausland-${l.slug}.html`;
+    // Crosslinks zu anderen Ländern generieren
+    let crossLinks = generateCrossLinks(laender, l, item => `einspruch-ausland-${item.slug}.html`, item => item.name);
+    
+    let infoboxText = l.infobox || "";
+
+    let content = auslandTpl
+        .replace(/\{\{LAND_NAME\}\}/g, l.name)
+        .replace(/\{\{BEHOERDE_EMAIL\}\}/g, l.email)
+        .replace(/\{\{DATEINAME\}\}/g, fName)
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{LAND_INFOBOX\}\}/g, infoboxText);
+
+    fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
+    
+    optAusland += `<option value="${fName}">Bußgeld aus ${l.name}</option>\n`;
+    linkAusland += `<a href="${fName}">Strafzettel in ${l.name} abwehren</a>\n`;
+});
+
+// =====================================================================
+// SILO 12: ABSCHLEPPEN & SICHERSTELLUNG (Städte-Basis)
+// =====================================================================
+staedte.forEach(c => {
+    let fName = `einspruch-abschleppen-${c.slug}.html`;
+    // Crosslinks für die Städte untereinander generieren
+    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-abschleppen-${item.slug}.html`, item => `Abschleppen in ${item.name}`);
+    
+    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
+    let stadtText = c.infobox || "";
+
+    let content = abschleppTpl
+        .replace(/\{\{STADT_NAME\}\}/g, c.name)
+        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{DATEINAME\}\}/g, fName)
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+
+    fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
+    
+    optAbschleppen += `<option value="${fName}">Abschlepp-Kosten in ${c.name}</option>\n`;
+    linkAbschleppen += `<a href="${fName}">Abschleppen ${c.name}</a>\n`;
+});
+
+// =====================================================================
+// SILO 13: LKW MAUT-VERSTÖSSE & BALM (B2B Nische)
+// =====================================================================
+mautbetreiber.forEach(m => {
+    let fName = `einspruch-mautstrafe-${m.slug}.html`;
+    // Crosslinks
+    let crossLinks = generateCrossLinks(mautbetreiber, m, item => `einspruch-mautstrafe-${item.slug}.html`, item => item.name);
+    
+    let infoboxText = m.infobox || "";
+
+    let content = mautTpl
+        .replace(/\{\{BETREIBER_NAME\}\}/g, m.name)
+        .replace(/\{\{BETREIBER_EMAIL\}\}/g, m.email)
+        .replace(/\{\{DATEINAME\}\}/g, fName)
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{MAUT_INFOBOX\}\}/g, infoboxText);
+
+    fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
+    
+    optMaut += `<option value="${fName}">Bescheid von ${m.name}</option>\n`;
+    linkMaut += `<a href="${fName}">Maut-Strafe von ${m.name} abwehren</a>\n`;
+});
+
+// =====================================================================
 // HUB-SEITE 1 GENERIEREN (Parkplatz)
 // =====================================================================
 if (fs.existsSync(path.join(__dirname, 'hub-parkplatz-master.html'))) {
@@ -372,6 +451,48 @@ if (fs.existsSync(path.join(__dirname, 'hub-bahn-master.html'))) {
     console.log('✅ Hub-Seite für Bahn & ÖPNV erfolgreich generiert.');
 } else {
     console.warn("⚠️ hub-bahn-master.html fehlt noch, Bahn-Hub wurde übersprungen (kann später hinzugefügt werden).");
+}
+
+// =====================================================================
+// HUB-SEITE 5 GENERIEREN (Auslands-Bußgelder)
+// =====================================================================
+if (fs.existsSync(path.join(__dirname, 'hub-ausland-master.html'))) {
+    let hubAuslandContent = loadTemplate('hub-ausland-master.html')
+        .replace(/\{\{OPT_AUSLAND\}\}/g, optAusland)       
+        .replace(/\{\{LINK_AUSLAND\}\}/g, linkAusland);    
+        
+    fs.writeFileSync(path.join(outputDir, 'ausland-bussgeld-info.html'), hubAuslandContent, 'utf8');
+    console.log('✅ Hub-Seite für Auslands-Bußgelder erfolgreich generiert.');
+} else {
+    console.warn("⚠️ hub-ausland-master.html fehlt noch, Hub wurde übersprungen.");
+}
+
+// =====================================================================
+// HUB-SEITE 6 GENERIEREN (Abschleppen)
+// =====================================================================
+if (fs.existsSync(path.join(__dirname, 'hub-abschleppen-master.html'))) {
+    let hubAbschleppContent = loadTemplate('hub-abschleppen-master.html')
+        .replace(/\{\{OPT_ABSCHLEPPEN\}\}/g, optAbschleppen)       
+        .replace(/\{\{LINK_ABSCHLEPPEN\}\}/g, linkAbschleppen);    
+        
+    fs.writeFileSync(path.join(outputDir, 'abschleppen-bussgeld-info.html'), hubAbschleppContent, 'utf8');
+    console.log('✅ Hub-Seite für Abschlepp-Kosten erfolgreich generiert.');
+} else {
+    console.warn("⚠️ hub-abschleppen-master.html fehlt noch, Hub wurde übersprungen.");
+}
+
+// =====================================================================
+// HUB-SEITE 7 GENERIEREN (LKW Maut & BALM)
+// =====================================================================
+if (fs.existsSync(path.join(__dirname, 'hub-maut-master.html'))) {
+    let hubMautContent = loadTemplate('hub-maut-master.html')
+        .replace(/\{\{OPT_MAUT\}\}/g, optMaut)       
+        .replace(/\{\{LINK_MAUT\}\}/g, linkMaut);    
+        
+    fs.writeFileSync(path.join(outputDir, 'lkw-maut-bussgeld.html'), hubMautContent, 'utf8');
+    console.log('✅ Hub-Seite für LKW-Maut & BALM erfolgreich generiert.');
+} else {
+    console.warn("⚠️ hub-maut-master.html fehlt noch, Hub wurde übersprungen.");
 }
 
 console.log('\n🎉 Fertig! Der Build lief ohne Fehler durch.');

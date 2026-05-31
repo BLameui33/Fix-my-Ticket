@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Italien",
+    "slug": "italien",
+    "email": "info@europeanparking.eu",
+    "infobox": "<strong>Sonderfall Italien (ZTL & 360-Tage-Frist):</strong> Italienische Behörden haben gemäß eigener Straßenverkehrsordnung (Codice della Strada) 360 Tage Zeit, um einen Verstoß an Halter im Ausland zuzustellen. Kommt der Brief an Tag 361, ist er verjährt! Zudem dürfen private Inkassofirmen wie <em>Nivi SpA</em> oder <em>EPC plc</em> hier in Deutschland nicht pfänden.<br><br><strong>Typische Orte:</strong> Besonders häufig erhalten deutsche Fahrer Bußgelder und Parktickets aus <em>Rom, Florenz, Venedig, Mailand, Neapel, Bologna, Pisa</em> und <em>Amalfi</em> – oft durch automatische ZTL-Kameras in den Altstädten."
+  },
+  {
+    "name": "Österreich",
+    "slug": "oesterreich",
+    "email": "post@bmi.gv.at",
+    "infobox": "<strong>Sonderfall Österreich (Abkommen mit Deutschland):</strong> Während in der restlichen EU die Vollstreckungsgrenze bei 70 Euro liegt, greift durch ein spezielles bilaterales Abkommen zwischen Deutschland und Österreich die Amtshilfe durch das Bundesamt für Justiz (BfJ) bereits ab einer Bagatellgrenze von <strong>25 Euro</strong>!<br><br><strong>Typische Orte:</strong> Bußgelder aus Österreich kommen häufig aus <em>Wien, Salzburg, Innsbruck, Graz, Hallstatt, Zell am See</em> und <em>Bregenz</em> – darunter viele Geschwindigkeitsverstöße auf der Autobahn sowie Parktickets in Altstadtzonen."
+  },
+  {
+    "name": "Niederlande",
+    "slug": "niederlande",
+    "email": "info@cjib.nl",
+    "infobox": "<strong>Sonderfall Niederlande (Halterhaftung):</strong> In den Niederlanden gilt eine strikte Halterhaftung. Die niederländische Inkassobehörde (CJIB) treibt Gelder rigoros ein. In Deutschland gilt jedoch die Fahrerhaftung (Grundgesetz). Das BfJ verweigert die Vollstreckung niederländischer Bescheide, wenn Sie glaubhaft versichern können, dass Sie nicht gefahren sind.<br><br><strong>Typische Orte:</strong> Häufige Bußgeldbescheide aus den Niederlanden stammen aus <em>Amsterdam, Rotterdam, Den Haag, Utrecht, Maastricht</em> und <em>Eindhoven</em> – meist Blitzer auf Autobahnen oder Parkgebühren in Innenstädten."
+  },
+  {
+    "name": "Frankreich",
+    "slug": "frankreich",
+    "email": "contact@antai.fr",
+    "infobox": "<strong>Sonderfall Frankreich (ANTAI):</strong> Die französische Behörde ANTAI verschickt Bescheide oft auf Deutsch, was formell korrekt ist. Auch hier gilt jedoch in Frankreich die Halterhaftung. Benennen Sie nicht leichtfertig den Fahrer, da dies in Deutschland zur Ablehnung der Vollstreckung durch das Bundesamt für Justiz führen kann.<br><br><strong>Typische Orte:</strong> Bußgelder aus Frankreich betreffen deutsche Reisende besonders häufig in <em>Paris, Nizza, Marseille, Lyon, Straßburg, Bordeaux</em> und <em>Cannes</em> – oft durch stationäre Blitzer auf Autobahnen oder Parktickets im Stadtzentrum."
+  },
+  {
+    "name": "Kroatien",
+    "slug": "kroatien",
+    "email": "info@epcplc.com",
+    "infobox": "<strong>Sonderfall Kroatien (Parken & EPC):</strong> Kroatische Kommunen beauftragen extrem oft ausländische Inkassobüros (Euro Parking Collection) oder Notare mit der Eintreibung von Parkgebühren. Deutsche Gerichte haben mehrfach geurteilt, dass diese privaten Konstrukte in Deutschland ohne EU-Amtshilfe über das BfJ nicht vollstreckbar sind.<br><br><strong>Typische Orte:</strong> Parktickets und Bußgelder aus Kroatien kommen besonders oft aus <em>Dubrovnik, Split, Zagreb, Zadar, Rovinj, Poreč</em> und <em>Hvar</em> – Dubrovnik ist dabei wegen seiner überfüllten Altstadtzonen besonders bekannt für hohe Parkgebühren."
+  },
+  {
+    "name": "Schweiz",
+    "slug": "schweiz",
+    "email": "info@fedpol.admin.ch",
+    "infobox": "<strong>Sonderfall Schweiz (Neuer Polizeivertrag):</strong> Die Schweiz ist nicht in der EU, jedoch ist ein neuer deutsch-schweizerischer Polizeivertrag aktiv. Dadurch können Schweizer Bußgelder ab einer Grenze von 80 Euro (bzw. 70 CHF) nun auch in Deutschland über das BfJ vollstreckt werden. Ignorieren ist hier keine Lösung mehr!<br><br><strong>Typische Orte:</strong> Schweizer Bußgelder betreffen deutsche Fahrer häufig in <em>Zürich, Genf, Basel, Bern, Luzern, Lugano</em> und <em>Interlaken</em> – insbesondere Tempoüberschreitungen, die in der Schweiz mit besonders harten Strafen geahndet werden (Rasergesetz)."
+  },
+  {
+    "name": "Spanien",
+    "slug": "spanien",
+    "email": "info@dgt.es",
+    "infobox": "<strong>Sonderfall Spanien (DGT & Rabatt):</strong> Die spanische Verkehrsbehörde DGT bietet oft einen Rabatt von 50 % an, wenn innerhalb von 20 Tagen gezahlt wird. Liegt das reduzierte Bußgeld unter 70 Euro, scheitert ein späterer Vollstreckungsversuch der Spanier in Deutschland oft an der EU-Bagatellgrenze.<br><br><strong>Typische Orte:</strong> Bußgelder aus Spanien kommen häufig aus <em>Barcelona, Madrid, Málaga, Valencia, Sevilla, Palma de Mallorca</em> und <em>Marbella</em> – Blitzer auf Autobahnen sowie Parkbeschränkungen in Altstadtzonen sind die häufigsten Ursachen."
+  },
+  {
+    "name": "Belgien",
+    "slug": "belgien",
+    "email": "infoperception@just.fgov.be",
+    "infobox": "<strong>Sonderfall Belgien (Strafzettel & Verjährung):</strong> Belgien setzt auf automatisierte Blitzer und verschickt Bescheide rasch. Als EU-Mitglied kann Belgien Bußgelder über das BfJ ab 70 Euro in Deutschland vollstrecken lassen. Achten Sie auf die Zustellungsdaten: Erhält der Halter den Bescheid zu spät, kann die belgische Verjährungsfrist von 3 Jahren bereits abgelaufen sein.<br><br><strong>Typische Orte:</strong> Bußgelder aus Belgien betreffen deutsche Fahrer besonders häufig in <em>Brüssel, Brügge, Gent, Antwerpen, Lüttich</em> und <em>Ypern</em> – Brüssel fällt durch strenge Umweltzonen (LEZ) auf, die bei Nichtbeachtung teuer werden können."
+  },
+  {
+    "name": "Tschechien",
+    "slug": "tschechien",
+    "email": "posta@mdcr.cz",
+    "infobox": "<strong>Sonderfall Tschechien (Vignettenkontrollen):</strong> Tschechien betreibt ein elektronisches Vignettensystem. Verstöße werden automatisch erfasst und per Halterauskunft dem deutschen Fahrer zugestellt. Als EU-Staat ist die Vollstreckung über das BfJ ab 70 Euro möglich. Besonderheit: Tschechische Behörden geben Verstößen auch dann nach, wenn die Vignette nachweislich kurz vor Fahrt gekauft wurde.<br><br><strong>Typische Orte:</strong> Deutsche Reisende erhalten Bußgelder aus Tschechien am häufigsten in <em>Prag, Brünn, Karlsbad, Pilsen, Olmütz</em> und <em>Český Krumlov</em> – Prag ist dabei wegen Parkverboten in der Innenstadt und Tempokontrollen besonders prominent."
+  },
+  {
+    "name": "Polen",
+    "slug": "polen",
+    "email": "kancelaria@gitd.gov.pl",
+    "infobox": "<strong>Sonderfall Polen (GITD & Mautkontrollen):</strong> Polen erhebt Maut auf Autobahnen und kontrolliert strikt die Einhaltung. Der Hauptinspektor für Straßentransport (GITD) ist für Bußgelder zuständig. Als EU-Mitglied ist die Vollstreckung in Deutschland ab 70 Euro grundsätzlich möglich, wird in der Praxis jedoch selten konsequent durchgesetzt.<br><br><strong>Typische Orte:</strong> Bußgelder aus Polen betreffen deutsche Fahrer häufig in <em>Danzig, Warschau, Krakau, Breslau, Stettin, Posen</em> und <em>Sopot</em> – auf der A2 und A4 werden zudem regelmäßig Geschwindigkeitskontrollen durchgeführt."
+  },
+  {
+    "name": "Slowenien",
+    "slug": "slowenien",
+    "email": "gp.mzp@gov.si",
+    "infobox": "<strong>Sonderfall Slowenien (Transitland & Vignette):</strong> Slowenien ist klassisches Transitland auf dem Weg nach Kroatien. Die Vignettenpflicht wird strikt kontrolliert, Verstöße per Kennzeichenerfassung geahndet. Als EU-Staat ist die Vollstreckung über das BfJ ab 70 Euro möglich. Bußgelder für fehlende Vignetten sind mit bis zu 500 Euro erheblich.<br><br><strong>Typische Orte:</strong> Strafzettel aus Slowenien kommen häufig aus <em>Ljubljana, Maribor, Bled, Piran, Portorož</em> und <em>Kranjska Gora</em> – viele Verstöße passieren direkt auf der Autobahn A1 im Transitverkehr Richtung Kroatien."
+  },
+  {
+    "name": "Slowakei",
+    "slug": "slowakei",
+    "email": "info@ndsas.sk",
+    "infobox": "<strong>Sonderfall Slowakei (E-Vignette):</strong> Die Slowakei setzt auf ein rein elektronisches Vignettenystem (ohne Klebevignette). Verstöße werden automatisiert erfasst. Als EU-Mitglied ist die Vollstreckung in Deutschland ab 70 Euro grundsätzlich möglich. Die Behörden agieren jedoch weniger aggressiv bei der grenzüberschreitenden Eintreibung als z. B. Österreich.<br><br><strong>Typische Orte:</strong> Deutsche Fahrer erhalten Bußgelder aus der Slowakei am häufigsten in <em>Bratislava, Košice, Banská Bystrica, Poprad</em> und <em>Trenčín</em> – Bratislava ist als Kurztrip-Ziel ab Wien besonders relevant."
+  },
+  {
+    "name": "Ungarn",
+    "slug": "ungarn",
+    "email": "ugyfelszolgalat@nkh.gov.hu",
+    "infobox": "<strong>Sonderfall Ungarn (e-Matrica & Halterhaftung):</strong> Ungarn betreibt ein elektronisches Mautsystem (e-Matrica). Es gilt Halterhaftung: Der Fahrzeughalter wird direkt per Kennzeichenabfrage in Deutschland angeschrieben. Als EU-Staat ist Vollstreckung ab 70 Euro über das BfJ möglich, die praktische Durchsetzungsrate ist jedoch überschaubar.<br><br><strong>Typische Orte:</strong> Strafzettel aus Ungarn betreffen deutsche Reisende häufig in <em>Budapest, Debrecen, Pécs, Győr, Balaton-Region</em> und <em>Eger</em> – Budapest ist dabei mit Abstand der häufigste Ausstellungsort, besonders für Parktickets in der Innenstadt."
+  },
+  {
+    "name": "Dänemark",
+    "slug": "daenemark",
+    "email": "mail@politi.dk",
+    "infobox": "<strong>Sonderfall Dänemark (Kopenhagen & Parken):</strong> Dänische Parkgebühren werden häufig von privaten Unternehmen verhängt. Nur staatliche Bußgelder (Politiet) sind über das BfJ vollstreckbar. Private Parkgebühren haben in Deutschland keinerlei Vollstreckungsgrundlage. Staatliche Verkehrsordnungswidrigkeiten werden als EU-Mitglied ab 70 Euro verfolgt.<br><br><strong>Typische Orte:</strong> Bußgelder aus Dänemark stammen häufig aus <em>Kopenhagen, Aarhus, Odense, Aalborg, Roskilde</em> und <em>Billund</em> – Kopenhagen ist mit seinem dichten Parkzonenetz und zahlreichen Tempokontrollen führend bei Bußgeldern gegen deutsche Touristen."
+  },
+  {
+    "name": "Schweden",
+    "slug": "schweden",
+    "email": "transportstyrelsen@transportstyrelsen.se",
+    "infobox": "<strong>Sonderfall Schweden (Congestion Tax):</strong> Schweden erhebt in Stockholm und Göteborg eine Mautgebühr (Trängselskatt / Congestion Tax). Diese wird automatisch per Kennzeichenerfassung erhoben. Als EU-Staat kann Schweden Forderungen ab 70 Euro über das BfJ in Deutschland vollstrecken lassen. Viele Autofahrer erhalten diese Bescheide unerwartet Wochen nach der Reise.<br><br><strong>Typische Orte:</strong> Die Congestion Tax fällt vor allem in <em>Stockholm</em> und <em>Göteborg</em> an. Weitere Bußgelder aus Schweden kommen aus <em>Malmö, Uppsala, Helsingborg</em> und <em>Visby</em> – oft Tempoüberschreitungen auf der E4 oder E6."
+  },
+  {
+    "name": "Norwegen",
+    "slug": "norwegen",
+    "email": "firmapost@vegvesen.no",
+    "infobox": "<strong>Sonderfall Norwegen (Nicht-EU & AutoPASS):</strong> Norwegen ist kein EU-Mitglied, erhebt aber über das AutoPASS-System Mautgebühren. Da kein bilaterales Vollstreckungsabkommen mit Deutschland besteht, können norwegische Forderungen in Deutschland in der Regel <strong>nicht vollstreckt</strong> werden. Praktisch: Diese Bescheide können meist ignoriert werden – jedoch auf eigenes Risiko bei Wiedereinreise.<br><br><strong>Typische Orte:</strong> AutoPASS-Gebühren und Bußgelder fallen für deutsche Fahrer häufig in <em>Oslo, Bergen, Stavanger, Trondheim, Tromsø</em> und <em>Kristiansand</em> an – sowie auf den Fjord-Fährrouten entlang des Sognefjords und Geirangerfjords."
+  },
+  {
+    "name": "Portugal",
+    "slug": "portugal",
+    "email": "atendimento@imtt.pt",
+    "infobox": "<strong>Sonderfall Portugal (Via Verde & Maut):</strong> Portugal hat ein flächendeckendes Mautsystem. Viele Autobahnen sind nur elektronisch oder per Nachzahlung befahrbar (z. B. Via Verde). Verstöße und nicht bezahlte Maut werden häufig erst Wochen später per Brief zugestellt. Als EU-Staat ist die Vollstreckung in Deutschland ab 70 Euro möglich.<br><br><strong>Typische Orte:</strong> Bußgelder aus Portugal betreffen deutsche Reisende häufig in <em>Lissabon, Porto, Faro, Albufeira, Lagos, Funchal (Madeira)</em> und <em>Sintra</em> – die Algarve-Autobahn A22 ist besonders bekannt für nachträglich zugestellte Mauttbescheide."
+  },
+  {
+    "name": "Griechenland",
+    "slug": "griechenland",
+    "email": "info@kteo.gr",
+    "infobox": "<strong>Sonderfall Griechenland (Mautstraßen & Vollzugsdefizit):</strong> Griechenland verfügt über viele mautpflichtige Straßen. Die Behörden sind EU-Mitglied und könnten theoretisch über das BfJ vollstrecken lassen. In der Praxis ist die grenzüberschreitende Vollstreckung durch griechische Behörden jedoch sehr selten. Dennoch sollten Bescheide nicht ignoriert werden, da bei Wiedereinreise Probleme entstehen können.<br><br><strong>Typische Orte:</strong> Strafzettel aus Griechenland stammen häufig aus <em>Athen, Thessaloniki, Rhodos, Heraklion (Kreta), Korfu, Mykonos</em> und <em>Santorini</em> – auf den Inseln sind es meist Parktickets, auf dem Festland Tempokontrollen auf der Egnatia Odos."
+  },
+  {
+    "name": "Luxemburg",
+    "slug": "luxemburg",
+    "email": "info@police.public.lu",
+    "infobox": "<strong>Sonderfall Luxemburg (Blitzer & EU-Vollstreckung):</strong> Luxemburg nutzt zunehmend Geschwindigkeitskontrollen und setzt Bußgelder konsequent durch. Als EU-Mitglied ist die Vollstreckung in Deutschland ab 70 Euro über das BfJ möglich. Durch die geografische Nähe und enge Verwaltungskooperation mit Deutschland ist die Durchsetzungsrate hier höher als in weiter entfernten EU-Staaten.<br><br><strong>Typische Orte:</strong> Bußgelder aus Luxemburg kommen fast ausschließlich aus <em>Luxemburg-Stadt, Esch-sur-Alzette, Differdange</em> und <em>Diekirch</em> – Geschwindigkeitskontrollen auf der A1, A3 und A6 betreffen besonders Pendler und Durchreisende aus Deutschland."
+  },
+  {
+    "name": "Türkei",
+    "slug": "tuerkei",
+    "email": "iletisim@kgm.gov.tr",
+    "infobox": "<strong>Sonderfall Türkei (Nicht-EU & kein Abkommen):</strong> Die Türkei ist kein EU-Mitglied. Es besteht kein bilaterales Vollstreckungsabkommen mit Deutschland. Türkische Bußgelder können in Deutschland daher rechtlich <strong>nicht vollstreckt</strong> werden. Achtung: Bei der Wiedereinreise in die Türkei können offene Forderungen zu Problemen an der Grenze führen – insbesondere bei häufigen Reisenden.<br><br><strong>Typische Orte:</strong> Bußgelder in der Türkei betreffen deutsche Urlauber und Türkeistämmige häufig in <em>Istanbul, Ankara, Antalya, Izmir, Bodrum, Alanya</em> und <em>Kappadokien</em> – auf der O-3 und O-4 Autobahn um Istanbul gibt es zudem zahlreiche HGS-Mautstellen, deren Nichtnutzung zu Strafgebühren führt."
+  }
+]

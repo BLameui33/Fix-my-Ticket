@@ -1,0 +1,50 @@
+[
+  {
+    "name": "BALM (Bundesamt für Logistik und Mobilität)",
+    "slug": "balm-deutschland",
+    "email": "poststelle@balm.bund.de",
+    "infobox": "<strong>Info zum BALM (ehemals BAG):</strong> Das BALM verhängt bei Mautverstößen Bußgelder nach dem OWiG gegen den Fahrer und parallel gegen das Unternehmen. Wichtig: Trennen Sie stets zwischen dem Bußgeldverfahren (BALM) und der reinen Maut-Nachforderung (Toll Collect)."
+  },
+  {
+    "name": "Toll Collect GmbH (Deutschland)",
+    "slug": "toll-collect",
+    "email": "info@toll-collect.de",
+    "infobox": "<strong>Info zu Toll Collect:</strong> Die Toll Collect GmbH verschickt keine Bußgelder, sondern Nachforderungsbescheide. Bewahren Sie bei OBU-Ausfällen zwingend alle Störungsprotokolle und Werkstattbelege auf, da Toll Collect die technische Beweislast oft auf den Spediteur abwälzt."
+  },
+  {
+    "name": "ASFINAG (Österreich)",
+    "slug": "asfinag-oesterreich",
+    "email": "info@asfinag.at",
+    "infobox": "<strong>Sonderfall Österreich (Ersatzmaut):</strong> Wenn die GO-Box fehlerhaft bucht, fordert die ASFINAG eine Ersatzmaut (120 - 240 €). Wird diese nicht innerhalb der kurzen Frist gezahlt, schaltet sich die Bezirksverwaltung ein – dann drohen saftige Verwaltungsstrafen von bis zu 3.000 Euro."
+  },
+  {
+    "name": "Viapass / Satellic (Belgien)",
+    "slug": "viapass-belgien",
+    "email": "support@satellic.be",
+    "infobox": "<strong>Sonderfall Belgien:</strong> Das km-basierte Mautsystem Viapass straft fehlerhafte Achsdeklarationen oder OBU-Ausfälle drakonisch ab. Es drohen automatisierte Bußgelder von bis zu 1.000 Euro pro Kalendertag. Der Nachweis von lückenlosen GPS- oder Werkstattprotokollen ist Pflicht."
+  },
+  {
+    "name": "ANTAI / Free-Flow Maut (Frankreich)",
+    "slug": "antai-frankreich",
+    "email": "contact@antai.fr",
+    "infobox": "<strong>Sonderfall Frankreich (Flux Libre):</strong> Auf immer mehr französischen Autobahnen gibt es schrankenlose Mautstationen (Free-Flow). Wer hier nicht binnen 72 Stunden online zahlt, erhält über die Behörde ANTAI ein Bußgeld von 90 € zzgl. Maut. Einsprüche müssen formal über das offizielle ANTAI-Portal eingereicht werden."
+  },
+  {
+    "name": "Autostrade per l'Italia / Nivi SpA (Italien)",
+    "slug": "autostrade-italien",
+    "email": "info@nivi.it",
+    "infobox": "<strong>Sonderfall Italien (Mancato Pagamento):</strong> Wenn die Telepass-Box versagt oder die Mautkarte streikt, öffnet sich die Schranke dennoch, es wird aber ein Beleg für 'unbezahlte Maut' ausgeworfen. Die Eintreibung erfolgt über das Inkassobüro Nivi SpA. Vorsicht: Ignorieren führt bei der nächsten Polizeikontrolle in Italien zur direkten Festsetzung des LKW."
+  },
+  {
+    "name": "KAS / e-TOLL (Polen)",
+    "slug": "etoll-polen",
+    "email": "kontakt@etoll.gov.pl",
+    "infobox": "<strong>Sonderfall Polen (e-TOLL):</strong> In Polen wird das Mautsystem direkt von der nationalen Finanzverwaltung (KAS) überwacht. Bei GPS-Verbindungsabbrüchen der OBU oder App verhängt die Behörde unbarmherzig Bußgelder wegen unvollständiger Mautzahlung. Einspruchsfristen betragen strikt 14 Tage ab Zustellung."
+  },
+  {
+    "name": "BAZG / LSVA Maut (Schweiz)",
+    "slug": "bazg-schweiz",
+    "email": "zentrale.lsva@bazg.admin.ch",
+    "infobox": "<strong>Sonderfall Schweiz (LSVA):</strong> Die Schweiz ist zwar kein EU-Mitglied, vollstreckt Mautverstöße (Leistungsabhängige Schwerverkehrsabgabe) aber rigoros über das deutsch-schweizerische Polizeiabkommen. Falsch deklarierte Anhänger oder fehlerhafte Deklarationsbelege an der Grenze führen zu massiven Bußen direkt gegen den Chauffeur."
+  }
+]
